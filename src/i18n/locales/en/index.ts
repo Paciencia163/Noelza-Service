@@ -3,6 +3,7 @@ import home from "./home.json";
 // import services from "./services.json";
 // import contact from "./contact.json";
 import header from "./header.json";
+import footer from "./footer.json";
 
 export default {
   home,
@@ -10,4 +11,5 @@ export default {
 //   services,
 //   contact,
   header,
+  footer,
 };

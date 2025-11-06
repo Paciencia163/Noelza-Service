@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import { Anchor, Mail, Phone, MapPin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 py-12">
@@ -10,43 +13,40 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-12 h-12 bg-slate-200 p-1 rounded-lg flex items-center justify-center">
-                {/* <Anchor className="w-6 h-6" /> */}
-              <img src="./Noelza.png" alt="" />
-
+                <img src="./Noelza.png" alt="" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Noelza Service</h3>
-                <p className="text-sm opacity-80">Maritime Solutions</p>
+                <h3 className="text-xl font-bold">{t("footer.company.name")}</h3>
+                <p className="text-sm opacity-80">{t("footer.company.tagline")}</p>
               </div>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
-              Especializada em Agenciamento de Navegação Marítima e Freight Forward, 
-              oferecendo soluções profissionais desde 2018.
+              {t("footer.company.description")}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
+            <h4 className="text-lg font-semibold mb-4">{t("footer.quickLinks.title")}</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/sobre" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
-                  Sobre Nós
+                  {t("footer.quickLinks.about")}
                 </Link>
               </li>
               <li>
                 <Link to="/servicos" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
-                  Serviços
+                  {t("footer.quickLinks.services")}
                 </Link>
               </li>
               <li>
                 <Link to="/atividades" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
-                  Atividades
+                  {t("footer.quickLinks.activities")}
                 </Link>
               </li>
               <li>
                 <Link to="/clientes" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
-                  Clientes
+                  {t("footer.quickLinks.clients")}
                 </Link>
               </li>
             </ul>
@@ -54,30 +54,30 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Serviços</h4>
+            <h4 className="text-lg font-semibold mb-4">{t("footer.services.title")}</h4>
             <ul className="space-y-2">
-              <li className="text-sm opacity-80">Agenciamento de Navios</li>
-              <li className="text-sm opacity-80">Freight Forward</li>
-              <li className="text-sm opacity-80">Licenciamento de Navios</li>
-              <li className="text-sm opacity-80">Consultoria Marítima</li>
+              <li className="text-sm opacity-80">{t("footer.services.agency")}</li>
+              <li className="text-sm opacity-80">{t("footer.services.freight")}</li>
+              <li className="text-sm opacity-80">{t("footer.services.licensing")}</li>
+              <li className="text-sm opacity-80">{t("footer.services.consulting")}</li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contacto</h4>
+            <h4 className="text-lg font-semibold mb-4">{t("footer.contact.title")}</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm opacity-80">geral@noelza.service.ao</span>
+                <span className="text-sm opacity-80">{t("footer.contact.email")}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4" />
-                <span className="text-sm opacity-80">+244 925 878 218</span>
+                <span className="text-sm opacity-80">{t("footer.contact.phone")}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4" />
-                <span className="text-sm opacity-80">Luanda, Angola</span>
+                <span className="text-sm opacity-80">{t("footer.contact.address")}</span>
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-sm opacity-80">
-            © 2024 Noelza Service. Todos os direitos reservados.
+            {t("footer.rights")}
           </p>
         </div>
       </div>
