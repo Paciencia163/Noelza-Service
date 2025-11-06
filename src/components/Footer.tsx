@@ -85,7 +85,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-sm opacity-80">
-            {t("footer.rights")}
+            {t("footer.copyright")}
           </p>
         </div>
       </div>

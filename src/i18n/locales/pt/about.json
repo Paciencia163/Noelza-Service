@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "title": "Sobre a Noelza Service",
+    "description": "Uma empresa especializada em soluções marítimas, oferecendo serviços de agenciamento de navegação e freight forward com excelência desde 2018."
+  },
+  "history": {
+    "title": "Nossa História",
+    "paragraph1": "Fundada em 14 de fevereiro de 2018, a Noelza Service nasceu com o objetivo de oferecer soluções profissionais e eficientes para o setor marítimo angolano. Nossa jornada foi marcada por momentos de crescimento, reorganização e consolidação no mercado.",
+    "paragraph2": "Após um período de reorganização estratégica, retomamos nossas atividades com uma estrutura renovada e parcerias sólidas, estabelecendo-nos como referência em agenciamento de navegação marítima e freight forward."
+  },
+  "timeline": [
+    {
+      "date": "14/02/2018",
+      "title": "Constituição",
+      "description": "Fundação oficial da Noelza Service"
+    },
+    {
+      "date": "2019/2022",
+      "title": "Paralisação",
+      "description": "Período de reorganização estratégica"
+    },
+    {
+      "date": "2023",
+      "title": "Reativação",
+      "description": "Retomada das atividades com nova estrutura"
+    },
+    {
+      "date": "2023/2024",
+      "title": "Acordo Comercial",
+      "description": "Estabelecimento de parcerias estratégicas"
+    },
+    {
+      "date": "2024",
+      "title": "Início de Atividades",
+      "description": "Operação plena com resultados excepcionais"
+    }
+  ],
+  "values": [
+    {
+      "title": "Excelência",
+      "description": "Compromisso com a qualidade em todos os serviços prestados"
+    },
+    {
+      "title": "Profissionalismo",
+      "description": "Equipe altamente qualificada e dedicada"
+    },
+    {
+      "title": "Confiabilidade",
+      "description": "Soluções seguras e eficientes para nossos clientes"
+    }
+  ],
+  "team": {
+    "title": "Equipe Multidisciplinar",
+    "description": "Nossa equipe é formada por profissionais dedicados e eficientes, com ampla experiência no setor marítimo e comprometidos com a excelência no atendimento.",
+    "members": [
+      {
+        "role": "Direção Executiva",
+        "description": "Liderança estratégica e visão de mercado"
+      },
+      {
+        "role": "Operações",
+        "description": "Gestão eficiente dos processos marítimos"
+      },
+      {
+        "role": "Consultoria",
+        "description": "Especialistas em regulamentação marítima"
+      }
+    ]
+  },
+  "mission": {
+    "title": "Nossa Missão",
+    "description": "Solucionar todos os trâmites legais exigidos entre os intervenientes do setor, dando comodidade e eficiência aos clientes."
+  },
+  "vision": {
+    "title": "Nossa Visão",
+    "description": "Estabelecer parcerias fortes e perseverantes no setor de shipping, sendo reconhecidos pela nossa excelência e profissionalismo."
+  }
+}
