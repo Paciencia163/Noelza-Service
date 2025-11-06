@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "Nossos Serviços",
+    "description": "Oferecemos soluções completas e profissionais para o setor marítimo, com foco na excelência operacional e satisfação do cliente."
+  },
+  "mainServices": [
+    {
+      "title": "Agenciamento de Navios",
+      "description": "Serviços completos de agenciamento marítimo",
+      "features": [
+        "Cumprimento de trâmites legais desde chegada até liberação da carga e tripulação",
+        "Comunicação entre embarcações e portos",
+        "Assessoria de mercados portuários",
+        "Coordenação com autoridades marítimas",
+        "Gestão de documentação naval"
+      ]
+    },
+    {
+      "title": "Freight Forward",
+      "description": "Soluções completas em logística internacional",
+      "features": [
+        "Auxílio na escolha de transporte mais adequado",
+        "Consultoria sobre normas tributárias e alfandegárias",
+        "Emissão e organização de documentação",
+        "Consolidação e liberação de cargas",
+        "Rastreamento de cargas em tempo real"
+      ]
+    },
+    {
+      "title": "Licenciamento de Navios",
+      "description": "Gestão especializada em licenciamento marítimo",
+      "features": [
+        "Gestão de atracagem e embarque",
+        "Análise de restrições legais",
+        "Coordenação com autoridades portuárias",
+        "Documentação para licenciamento",
+        "Acompanhamento de processos"
+      ]
+    }
+  ],
+  "additionalServices": [
+    {
+      "title": "Consultoria Marítima",
+      "description": "Consultoria especializada em regulamentação marítima e portuária"
+    },
+    {
+      "title": "Gestão de Tripulação",
+      "description": "Assistência completa para tripulantes e gestão de recursos humanos navais"
+    },
+    {
+      "title": "Compliance Marítimo",
+      "description": "Garantia de conformidade com regulamentações nacionais e internacionais"
+    },
+    {
+      "title": "Operações Internacionais",
+      "description": "Coordenação de operações marítimas em águas internacionais"
+    }
+  ],
+  "process": [
+    { "step": "01", "title": "Análise", "desc": "Avaliação detalhada das necessidades" },
+    { "step": "02", "title": "Planejamento", "desc": "Estratégia personalizada para cada caso" },
+    { "step": "03", "title": "Execução", "desc": "Implementação eficiente dos serviços" },
+    { "step": "04", "title": "Acompanhamento", "desc": "Suporte contínuo e monitoramento" }
+  ],
+  "cta": {
+    "title": "Precisa dos Nossos Serviços?",
+    "description": "Entre em contato conosco para uma consulta personalizada e descubra como podemos otimizar suas operações marítimas.",
+    "buttons": {
+      "quote": "Solicitar Orçamento",
+      "contact": "Fale Conosco"
+    }
+  }
+}
