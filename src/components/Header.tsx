@@ -17,8 +17,11 @@ const Header = () => {
     { name: t("header.home"), href: "/" },
     { name: t("header.about"), href: "/sobre" },
     { name: t("header.services"), href: "/servicos" },
+    { name: t("header.ativities"), href: "/atividades" },
     { name: t("header.clients"), href: "/clientes" },
+    { name: t("header.equipe"), href: "/equipe" },
     { name: t("header.contact"), href: "/contato" },
+
   ];
 
   const isActive = (href: string) => location.pathname === href;
@@ -82,7 +85,7 @@ const Header = () => {
           {/* Contact Button */}
           <div className="hidden md:block">
             <Button asChild className="btn-maritime">
-              <Link to="/contato">{t("header.contact")}</Link>
+              <Link to="/contato">{t("header.contactButton")}</Link>
             </Button>
           </div>
 
@@ -149,7 +152,7 @@ const Header = () => {
               <div className="pt-4">
                 <Button asChild className="btn-maritime w-full">
                   <Link to="/contato" onClick={() => setIsOpen(false)}>
-                    {t("header.contact")}
+                    {t("header.cta.contactButton")}
                   </Link>
                 </Button>
               </div>
