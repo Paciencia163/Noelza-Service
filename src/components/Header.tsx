@@ -1,20 +1,24 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Anchor } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng: "pt" | "en") => {
+    i18n.changeLanguage(lng);
+  };
 
   const navigation = [
-    { name: "Início", href: "/" },
-    { name: "Sobre Nós", href: "/sobre" },
-    { name: "Serviços", href: "/servicos" },
-    { name: "Actividades", href: "/atividades" },
-    { name: "Clientes", href: "/clientes" },
-    { name: "Equipe", href: "/equipe" },
-    { name: "Contacto", href: "/contato" },
+    { name: t("header.home"), href: "/" },
+    { name: t("header.about"), href: "/sobre" },
+    { name: t("header.services"), href: "/servicos" },
+    { name: t("header.clients"), href: "/clientes" },
+    { name: t("header.contact"), href: "/contato" },
   ];
 
   const isActive = (href: string) => location.pathname === href;
@@ -26,18 +30,12 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-16 h-10 rounded-lg flex items-center justify-center">
-            {/* <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center"> */}
-              {/* <Anchor className="w-6 h-6 text-primary-foreground" /> */}
-              <img src="./Noelza.png" alt="" />
-            </div>
-            <div className="flex flex-col">
-              {/* <span className="text-xl font-bold text-primary">Noelza Service</span> */}
-              {/* <span className="text-xs text-muted-foreground">Maritime Solutions</span> */}
+              <img src="./Noelza.png" alt="Noelza Service" />
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8 items-center">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -51,12 +49,40 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+
+            {/* Language Switcher */}
+            <div className="flex items-center space-x-2 ml-4">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => changeLanguage("pt")}
+                className={`${
+                  i18n.language === "pt"
+                    ? "border border-primary text-primary font-semibold"
+                    : "text-foreground hover:text-white"
+                }`}
+              >
+                🇵🇹 PT
+              </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => changeLanguage("en")}
+                className={`${
+                  i18n.language === "en"
+                    ? "border border-primary text-primary font-semibold"
+                    : "text-foreground hover:text-white"
+                }`}
+              >
+                🇬🇧 EN
+              </Button>
+            </div>
           </nav>
 
           {/* Contact Button */}
           <div className="hidden md:block">
             <Button asChild className="btn-maritime">
-              <Link to="/contato">Fale Conosco</Link>
+              <Link to="/contato">{t("header.contact")}</Link>
             </Button>
           </div>
 
@@ -91,10 +117,39 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
+
+              {/* Language Switcher for Mobile */}
+              <div className="flex justify-center space-x-4 pt-4">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => changeLanguage("pt")}
+                  className={`w-20 ${
+                    i18n.language === "pt"
+                      ? "border-primary text-primary font-semibold"
+                      : "text-foreground"
+                  }`}
+                >
+                  🇵🇹 PT
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => changeLanguage("en")}
+                  className={`w-20 ${
+                    i18n.language === "en"
+                      ? "border-primary text-primary font-semibold"
+                      : "text-foreground"
+                  }`}
+                >
+                  🇬🇧 EN
+                </Button>
+              </div>
+
               <div className="pt-4">
                 <Button asChild className="btn-maritime w-full">
                   <Link to="/contato" onClick={() => setIsOpen(false)}>
-                    Fale Conosco
+                    {t("header.contact")}
                   </Link>
                 </Button>
               </div>
