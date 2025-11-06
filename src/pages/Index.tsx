@@ -3,37 +3,40 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Ship, Anchor, Container, Users, ArrowRight, Globe } from "lucide-react";
 import heroImage from "@/assets/maritime-hero.jpg";
+import { useTranslation } from "react-i18next";
 
 const Index = () => {
+  const { t } = useTranslation();
+
   const features = [
     {
       icon: Ship,
-      title: "Agenciamento de Navios",
-      description: "Cumprimento de todos os trâmites legais desde a chegada até a liberação completa."
+      title: t("home.features.agency.title"),
+      description: t("home.features.agency.text"),
     },
     {
       icon: Container,
-      title: "Freight Forward",
-      description: "Consultoria completa em transporte e documentação internacional."
+      title: t("home.features.forward.title"),
+      description: t("home.features.forward.text"),
     },
     {
       icon: Anchor,
-      title: "Licenciamento",
-      description: "Gestão especializada de atracagem, embarque e restrições legais."
-    }
+      title: t("home.features.licensing.title"),
+      description: t("home.features.licensing.text"),
+    },
   ];
 
   const stats = [
-    { number: "+233", label: "Navios Atendidos (2025)" },
-    { number: "+1,630", label: "Navios em Clearency" },
-    { number: "27,979", label: "Tripulantes Assistidos" },
-    { number: "6+", label: "Anos de Experiência" }
+    { number: "+233", label: t("home.stats.shipsServed") },
+    { number: "+1,630", label: t("home.stats.inClearance") },
+    { number: "27,979", label: t("home.stats.crewAssisted") },
+    { number: "6+", label: t("home.stats.yearsExperience") },
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
+      <section
         className="relative h-screen flex items-center justify-center text-center hero-maritime wave-effect"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(${heroImage})`,
@@ -44,21 +47,21 @@ const Index = () => {
         <div className="container mx-auto px-4 z-10">
           <div className="max-w-4xl mx-auto text-white">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-              Soluções Marítimas
-              <span className="block text-maritime-cyan">Profissionais</span>
+              {t("home.hero.title")}
+              {/* <span className="block text-maritime-cyan">{t("home.hero.subtitle")}</span> */}
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in">
-              Especialistas em Agenciamento de Navegação e Freight Forward desde 2018
+              {t("home.hero.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
               <Button asChild size="lg" className="btn-maritime text-lg px-8 py-4">
                 <Link to="/servicos">
-                  Conheça Nossos Serviços
+                  {t("home.hero.ctaServices")}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="btn-outline-maritime text-lg px-8 py-4 bg-white/10 border-white text-white hover:bg-white hover:text-primary">
-                <Link to="/contato">Fale Conosco</Link>
+                <Link to="/contato">{t("home.hero.ctaContact")}</Link>
               </Button>
             </div>
           </div>
@@ -89,37 +92,30 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Sobre a Noelza Service
+                {t("home.about.title")}
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Fundada em 14 de fevereiro de 2018, a Noelza Service é uma empresa especializada 
-                em soluções marítimas, oferecendo serviços de agenciamento de navegação e freight forward 
-                com excelência e profissionalismo.
+                {t("home.about.description")}
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start space-x-3">
                   <Globe className="w-6 h-6 text-accent mt-1" />
                   <div>
-                    <h4 className="font-semibold text-primary">Nossa Missão</h4>
-                    <p className="text-muted-foreground">
-                      Solucionar todos os trâmites legais exigidos entre os intervenientes do sector, 
-                      dando comodidade e eficiência aos clientes.
-                    </p>
+                    <h4 className="font-semibold text-primary">{t("home.about.mission.title")}</h4>
+                    <p className="text-muted-foreground">{t("home.about.mission.text")}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Users className="w-6 h-6 text-accent mt-1" />
                   <div>
-                    <h4 className="font-semibold text-primary">Nossa Visão</h4>
-                    <p className="text-muted-foreground">
-                      Estabelecer parcerias fortes e perseverantes no sector de shipping.
-                    </p>
+                    <h4 className="font-semibold text-primary">{t("home.about.vision.title")}</h4>
+                    <p className="text-muted-foreground">{t("home.about.vision.text")}</p>
                   </div>
                 </div>
               </div>
               <Button asChild className="btn-maritime">
                 <Link to="/sobre">
-                  Saiba Mais Sobre Nós
+                  {t("home.about.more")}
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
@@ -128,29 +124,29 @@ const Index = () => {
               <Card className="card-maritime">
                 <CardContent className="p-6 text-center">
                   <Ship className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h4 className="font-semibold text-primary mb-2">Experiência</h4>
-                  <p className="text-sm text-muted-foreground">6+ anos no mercado marítimo</p>
+                  <h4 className="font-semibold text-primary mb-2">{t("home.features.agency.title")}</h4>
+                  <p className="text-sm text-muted-foreground">{t("home.stats.yearsExperience")}</p>
                 </CardContent>
               </Card>
               <Card className="card-maritime">
                 <CardContent className="p-6 text-center">
                   <Container className="w-12 h-12 text-accent mx-auto mb-4" />
-                  <h4 className="font-semibold text-primary mb-2">Eficiência</h4>
-                  <p className="text-sm text-muted-foreground">Soluções rápidas e confiáveis</p>
+                  <h4 className="font-semibold text-primary mb-2">{t("home.features.forward.title")}</h4>
+                  <p className="text-sm text-muted-foreground">{t("home.features.forward.text")}</p>
                 </CardContent>
               </Card>
               <Card className="card-maritime">
                 <CardContent className="p-6 text-center">
                   <Anchor className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h4 className="font-semibold text-primary mb-2">Especialização</h4>
-                  <p className="text-sm text-muted-foreground">Foco no sector marítimo</p>
+                  <h4 className="font-semibold text-primary mb-2">{t("home.features.licensing.title")}</h4>
+                  <p className="text-sm text-muted-foreground">{t("home.features.licensing.text")}</p>
                 </CardContent>
               </Card>
               <Card className="card-maritime">
                 <CardContent className="p-6 text-center">
                   <Users className="w-12 h-12 text-accent mx-auto mb-4" />
-                  <h4 className="font-semibold text-primary mb-2">Equipe</h4>
-                  <p className="text-sm text-muted-foreground">Profissionais dedicados</p>
+                  <h4 className="font-semibold text-primary mb-2">{t("home.cta.title")}</h4>
+                  <p className="text-sm text-muted-foreground">{t("home.cta.text")}</p>
                 </CardContent>
               </Card>
             </div>
@@ -163,11 +159,10 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Nossos Serviços
+              {t("home.features.viewAll")}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Oferecemos soluções completas para o setor marítimo, com foco na excelência 
-              e eficiência operacional.
+              {t("home.features.forward.text")}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -188,7 +183,7 @@ const Index = () => {
           <div className="text-center mt-12">
             <Button asChild className="btn-maritime">
               <Link to="/servicos">
-                Ver Todos os Serviços
+                {t("home.features.viewAll")}
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
@@ -200,15 +195,14 @@ const Index = () => {
       <section className="section-maritime bg-primary text-primary-foreground">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Pronto para Começar?
+            {t("home.cta.title")}
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Entre em contacto conosco e descubra como podemos facilitar 
-            as suas operações marítimas com soluções profissionais e eficientes.
+            {t("home.cta.text")}
           </p>
           <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-4">
             <Link to="/contato">
-              Fale Conosco Agora
+              {t("home.cta.button")}
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </Button>
