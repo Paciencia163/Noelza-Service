@@ -14,6 +14,13 @@ relation: string;
 services: string[];
 }
 
+interface ClientType {
+icon: any;
+count: string;
+title: string;
+description: string;
+}
+
 interface Testimonial {
 quote: string;
 author: string;
@@ -38,6 +45,7 @@ const { t } = useTranslation()
 // Carrega dados do JSON i18n e tipa os arrays
 const mainClients = t("clients.mainClients", { returnObjects: true }) as Client[];
 const mainClientsNew = t("clients.mainClientsNew", { returnObjects: true }) as Client[];
+const clientTypes = t("clients.clientTypes", { returnObjects: true }) as ClientType[];
 const testimonials = t("clients.testimonials", { returnObjects: true }) as Testimonial[];
 const benefits = t("clients.benefits", { returnObjects: true }) as Benefit[];
 const cta = t("clients.cta", { returnObjects: true }) as CTA;
@@ -47,6 +55,13 @@ const cta = t("clients.cta", { returnObjects: true }) as CTA;
       award: Award,
       globe: Globe,
       users: Users,
+    };
+
+     const iconClientType: Record<string, any> = {
+      Building2: Building2,
+      Globe: Globe,
+      Users: Users,
+      Award: Award,
     };
 
 return ( <div className="min-h-screen">
@@ -112,6 +127,34 @@ return ( <div className="min-h-screen">
       </div>  
     </div>  
   </section>  
+
+   {/* Client Types */}
+  <section className="section-maritime bg-maritime-gray/20">
+    <div className="container mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold text-primary mb-4">{t("clients.clientType.clientTypesTitle")}</h2>
+        <p className="text-lg text-muted-foreground">
+          {t("clients.clientType.clientTypesDescription")}
+        </p>
+      </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {clientTypes.map((type, index) => {
+          // const Icon = type.icon;
+          const Icon = iconClientType[type.icon];
+          return (
+            <Card key={index} className="card-maritime group">
+              <CardContent className="p-6 text-center">
+                <Icon className="w-16 h-16 text-primary mx-auto mb-4 group-hover:text-accent transition-colors duration-300" />
+                <div className="text-3xl font-bold text-primary mb-2">{type.count}</div>
+                <h3 className="text-lg font-semibold text-primary mb-3">{type.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{type.description}</p>
+              </CardContent>
+            </Card>
+          );
+        })}
+      </div>
+    </div>
+  </section>
 
   {/* Testimonials */}  
   <section className="section-maritime">  

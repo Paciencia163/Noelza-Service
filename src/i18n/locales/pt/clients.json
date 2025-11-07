@@ -95,27 +95,31 @@
       "relation": "Parceiro"
     }
   ],
+  "clientType": {
+    "clientTypesTitle": "Tipos de Clientes",
+    "clientTypesDescription": "Diversidade de empresas que atendemos no sector marítimo"
+  },
   "clientTypes": [
     {
-      "key": "Building2",
+      "icon": "Building2",
       "title": "Empresas Offshore",
       "count": "12+",
       "description": "Companhias especializadas em operações marítimas offshore"
     },
     {
-      "key": "Globe",
+      "icon": "Globe",
       "title": "Operadores Internacionais",
       "count": "8+",
       "description": "Empresas multinacionais com operações em Angola"
     },
     {
-      "key": "Users",
+      "icon": "Users",
       "title": "Armadores Locais",
       "count": "15+",
       "description": "Proprietários e operadores de embarcações nacionais"
     },
     {
-      "key": "Award",
+      "icon": "Award",
       "title": "Parcerias Estratégicas",
       "count": "5+",
       "description": "Parcerias de longo prazo com empresas do setor"

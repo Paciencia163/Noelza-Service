@@ -97,28 +97,31 @@
       "relation": "Partner"
     }
   ],
-
+  "clientType": {
+    "clientTypesTitle": "Types of Customers",
+    "clientTypesDescription": "Diversity of companies we serve in the maritime sector"
+  },
   "clientTypes": [
     {
-      "key": "Building2",
+      "icon": "Building2",
       "title": "Offshore Companies",
       "count": "12+",
       "description": "Companies specialized in offshore maritime operations"
     },
     {
-      "key": "Globe",
+      "icon": "Globe",
       "title": "International Operators",
       "count": "8+",
       "description": "Multinational companies operating in Angola"
     },
     {
-      "key": "Users",
+      "icon": "Users",
       "title": "Local Shipowners",
       "count": "15+",
       "description": "Owners and operators of national vessels"
     },
     {
-      "key": "Award",
+      "icon": "Award",
       "title": "Strategic Partnerships",
       "count": "5+",
       "description": "Long-term partnerships with companies in the sector"
