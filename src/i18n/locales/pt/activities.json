@@ -23,10 +23,10 @@
     }
   },
   "serviceTypes": [
-    { "service": "Partida/Chegada da Tripulação", "count": "24,687" },
+    { "service": "Partida/Chegada da Tripulação", "count": "20,974" },
     { "service": "Taxa Mensal da Agência", "count": "216" },
-    { "service": "Taxa de Parto", "count": "267" },
-    { "service": "Liberação do Porto", "count": "1,672" },
+    { "service": "Taxa de Parto", "count": "193" },
+    { "service": "Liberação do Porto", "count": "1,384" },
     { "service": "Outros Serviços", "count": "44" }
   ],
   

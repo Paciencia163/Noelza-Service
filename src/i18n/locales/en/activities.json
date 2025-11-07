@@ -23,10 +23,10 @@
     }
   },
   "serviceTypes": [
-    { "service": "Crew Departure/Arrival", "count": "24,687" },
+    { "service": "Crew Departure/Arrival", "count": "20,974" },
     { "service": "Monthly Agency Fee", "count": "216" },
-    { "service": "Birthing Fee", "count": "267" },
-    { "service": "Port Clearance", "count": "1,672" },
+    { "service": "Birthing Fee", "count": "193" },
+    { "service": "Port Clearance", "count": "1,384" },
     { "service": "Other Services", "count": "44" }
   ],
   "performance": {
