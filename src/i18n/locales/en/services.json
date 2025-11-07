@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "Our Services",
+    "subtitle": "We offer complete and professional solutions for the maritime sector, focused on operational excellence and customer satisfaction."
+  },
+  "mainServicesCardTitle": "Specialized Service",
+  "mainServicesCardDescription": "Our highly qualified and experienced team is ready to meet all your needs with maximum efficiency.",
+  "mainServices": [
+    {
+      "icon": "Ship",
+      "title": "Ship Agency",
+      "description": "Comprehensive maritime agency services",
+      "features": [
+        "Handling all legal formalities from arrival to cargo and crew clearance",
+        "Communication between vessels and ports",
+        "Port market advisory",
+        "Coordination with maritime authorities",
+        "Ship documentation management"
+      ]
+    },
+    {
+      "icon": "Container",
+      "title": "Freight Forwarding",
+      "description": "Complete international logistics solutions",
+      "features": [
+        "Assistance in choosing the most suitable transport",
+        "Advice on tax and customs regulations",
+        "Issuance and organization of documentation",
+        "Cargo consolidation and clearance",
+        "Real-time cargo tracking"
+      ]
+    },
+    {
+      "icon": "Anchor",
+      "title": "Ship Licensing",
+      "description": "Specialized management of maritime licensing",
+      "features": [
+        "Docking and boarding management",
+        "Legal restriction analysis",
+        "Coordination with port authorities",
+        "Licensing documentation",
+        "Process monitoring"
+      ]
+    }
+  ],
+  "additionalServicesTitle": "Additional Services",
+  "additionalServicesDescription": "Extra services to complement your maritime needs",
+  "additionalServices": [
+    { "icon": "FileText", "title": "Maritime Consulting", "description": "Expert advice on maritime and port regulations" },
+    { "icon": "Users", "title": "Crew Management", "description": "Comprehensive assistance for seafarers and HR management" },
+    { "icon": "Shield", "title": "Maritime Compliance", "description": "Ensuring compliance with national and international regulations" },
+    { "icon": "Globe", "title": "International Operations", "description": "Coordination of maritime operations in international waters" }
+  ],
+  "process": {
+    "title": "Our Process",
+    "subtitle": "How we work to ensure the best experience",
+    "steps": [
+      { "step": "01", "title": "Analysis", "desc": "Detailed assessment of client needs" },
+      { "step": "02", "title": "Planning", "desc": "Customized strategy for each case" },
+      { "step": "03", "title": "Execution", "desc": "Efficient service implementation" },
+      { "step": "04", "title": "Follow-up", "desc": "Continuous support and monitoring" }
+    ]
+  },
+  "cta": {
+    "title": "Need Our Services?",
+    "subtitle": "Contact us for a personalized consultation and discover how we can optimize your maritime operations.",
+    "buttons": [
+      { "label": "Request a Quote" },
+      { "label": "Contact Us" }
+    ]
+  }
+}

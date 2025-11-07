@@ -2,7 +2,7 @@ import home from "./home.json";
 import about from "./about.json";
 import team from "./team.json";
 import clients from "./clients.json";
-// import service from "./service.json";
+import services from "./services.json";
 import contact from "./contact.json";
 import header from "./header.json";
 import footer from "./footer.json";
@@ -12,7 +12,7 @@ export default {
   about,
   team,
   clients,
-//   service,
+  services,
   contact,
   header,
   footer,
