@@ -1,11 +1,50 @@
     import { useRef, useState } from "react";
+
+    import { MapContainer, TileLayer, Marker, Popup, ZoomControl, Tooltip } from "react-leaflet";
+    
     import { useTranslation } from "react-i18next";
     import { Card, CardContent } from "@/components/ui/card";
     import { Button } from "@/components/ui/button";
     import { Input } from "@/components/ui/input";
     import { Textarea } from "@/components/ui/textarea";
     import { MapPin, Phone, Mail, Clock, Send, MessageSquare } from "lucide-react";
+
     import { useToast } from "@/hooks/use-toast";
+    import L from "leaflet";
+    import "leaflet/dist/leaflet.css";
+    import "leaflet.fullscreen";
+    import "leaflet.fullscreen/Control.FullScreen.css";
+
+    // import iconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
+    // import iconUrl from "leaflet/dist/images/marker-icon.png";
+    // import shadowUrl from "leaflet/dist/images/marker-shadow.png";
+
+// Definindo ícones de cores diferentes
+const blueIcon = new L.Icon({
+  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+  iconSize: [25, 41],
+});
+
+const redIcon = new L.Icon({
+  iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png",
+  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+  iconSize: [25, 41],
+});
+
+
+// Coordenadas dos escritórios
+const offices = [
+  { nameKey: "main", coords: [-8.838333, 13.234444], icon: blueIcon },
+  { nameKey: "operations", coords: [-8.820000, 13.230000], icon: redIcon },
+];
+
 
     const Contact = () => {
     const { t } = useTranslation();
@@ -30,6 +69,9 @@
     }
 
     const { toast } = useToast();
+
+  // Coordenadas de exemplo (pode mudar para a localização real)
+  const position: [number, number] = [-8.839, 13.289]; // Luanda, Angola
 
     const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -245,17 +287,40 @@
               </Card>
             </div>
             <div>
-              <Card className="card-maritime">
-                <CardContent className="p-8 text-center">
-                  <div className="w-full h-64 bg-maritime-gray/30 rounded-lg flex items-center justify-center mb-6">
-                    <div className="text-center">
-                      <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                      <p className="text-muted-foreground">{t("contact.office.mapPlaceholder")}</p>
-                    </div>
-                  </div>
-                  <Button className="btn-maritime w-full">{t("contact.office.viewMapButton")}</Button>
-                </CardContent>
-              </Card>
+     <Card className="card-maritime">
+      <CardContent className="p-8 text-center">
+        {/* Mapa */}
+        <div className="w-full h-64 bg-maritime-gray/30 rounded-lg flex items-center justify-center mb-6">
+          <MapContainer
+            center={offices[0].coords}
+            zoom={13}
+            scrollWheelZoom
+            style={{ height: "100%", width: "100%" }}
+          >
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            {offices.map((office, idx) => (
+              <Marker key={idx} position={office.coords} icon={office.icon}>
+                <Tooltip>{t(`contact.office.${office.nameKey}`)}</Tooltip>
+              </Marker>
+            ))}
+          </MapContainer>
+        </div>
+
+        {/* Botão abrir no Google Maps */}
+        <Button
+          className="btn-maritime w-full"
+          onClick={() => {
+            // Abrir rota até o escritório principal
+            window.open(
+              `https://www.google.com/maps/dir/?api=1&destination=${offices[0].coords[0]},${offices[0].coords[1]}`,
+              "_blank"
+            );
+          }}
+        >
+          {t("contact.office.viewMapButton")}
+        </Button>
+      </CardContent>
+    </Card>
             </div>
           </div>
         </div>

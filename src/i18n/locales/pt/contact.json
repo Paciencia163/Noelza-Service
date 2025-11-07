@@ -80,7 +80,9 @@
     "directionsLabel": "Como Chegar",
     "directions": "Localização estratégica com fácil acesso aos principais portos e terminais marítimos de Luanda.",
     "mapPlaceholder": "Mapa interativo será integrado aqui",
-    "viewMapButton": "Ver no Google Maps"
+    "main": "Escritório Principal",
+    "operations": "Escritório de Operações",
+    "viewMapButton": "Ver Mapa Completo"
   },
   "faq": {
     "title": "Perguntas Frequentes",
@@ -110,6 +112,7 @@
     "requestQuote": "Solicitar Orçamento",
     "scheduleMeeting": "Agendar Reunião"
   }
+  
 }
 
 

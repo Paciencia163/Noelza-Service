@@ -78,7 +78,9 @@
     "directionsLabel": "How to Reach",
     "directions": "Strategically located with easy access to the main ports and maritime terminals of Luanda.",
     "mapPlaceholder": "Interactive map will be integrated here",
-    "viewMapButton": "View on Google Maps"
+    "main": "Main Office",
+    "operations": "Operations Office",
+    "viewMapButton": "View Full Map"
   },
   "faq": {
     "title": "Frequently Asked Questions",
