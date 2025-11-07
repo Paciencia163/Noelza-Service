@@ -152,7 +152,7 @@ const Header = () => {
               <div className="pt-4">
                 <Button asChild className="btn-maritime w-full">
                   <Link to="/contato" onClick={() => setIsOpen(false)}>
-                    {t("header.cta.contactButton")}
+                    {t("header.contactButton")}
                   </Link>
                 </Button>
               </div>

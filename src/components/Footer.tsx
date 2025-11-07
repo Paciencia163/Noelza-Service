@@ -57,7 +57,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">{t("footer.services.title")}</h4>
             <ul className="space-y-2">
               <li className="text-sm opacity-80">{t("footer.services.agency")}</li>
-              <li className="text-sm opacity-80">{t("footer.services.freight")}</li>
+              <li className="text-sm opacity-80">{t("footer.services.forward")}</li>
               <li className="text-sm opacity-80">{t("footer.services.licensing")}</li>
               <li className="text-sm opacity-80">{t("footer.services.consulting")}</li>
             </ul>
