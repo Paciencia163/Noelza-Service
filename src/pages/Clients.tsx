@@ -10,8 +10,8 @@ alt?: string;
 description: string;
 sector: string;
 partnership: string;
+relation: string;
 services: string[];
-relashionship: string;
 }
 
 interface Testimonial {
@@ -43,14 +43,14 @@ const benefits = t("clients.benefits", { returnObjects: true }) as Benefit[];
 const cta = t("clients.cta", { returnObjects: true }) as CTA;
 
 return ( <div className="min-h-screen">
-{/* Hero Section */} <section className="section-maritime bg-maritime-gray/20"> <div className="container mx-auto text-center"> <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">{t("hero.title")}</h1> <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">{t("hero.subtitle")}</p> </div> </section>
+{/* Hero Section */} <section className="section-maritime bg-maritime-gray/20"> <div className="container mx-auto text-center"> <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">{t("clients.hero.title")}</h1> <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">{t("clients.hero.subtitle")}</p> </div> </section>
 
   {/* Main Clients */}  
   <section className="section-maritime">  
     <div className="container mx-auto">  
       <div className="text-center mb-12">  
-        <h2 className="text-3xl font-bold text-primary mb-4">{t("mainClientsTitle", "Clientes e Parceiros")}</h2>  
-        <p className="text-lg text-muted-foreground">{t("mainClientsDescription", "Empresas que confiam em nossa expertise marítima")}</p>  
+        <h2 className="text-3xl font-bold text-primary mb-4">{t("clients.mainClientsHeader.mainClientsTitle")}</h2>  
+        <p className="text-lg text-muted-foreground">{t("clients.mainClientsHeader.mainClientsDescription")}</p>  
       </div>  
       <div className="space-y-8">  
         {mainClients.map((client, index) => (  
@@ -63,7 +63,7 @@ return ( <div className="min-h-screen">
                   </div>  
                   <h3 className="text-2xl font-bold text-primary mb-2">{client.name}</h3>  
                   <p className="text-muted-foreground mb-2">{client.sector}</p>  
-                  <p className="text-sm text-accent font-medium">{client.relashionship}: {client.partnership}</p>  
+                  <p className="text-sm text-accent font-medium">{client.relation}: {client.partnership}</p>  
                 </div>  
                 <div className="md:col-span-2">  
                   <p className="text-lg text-muted-foreground mb-6 leading-relaxed">{client.description}</p>  
@@ -88,8 +88,8 @@ return ( <div className="min-h-screen">
   <section className="py-16">  
     <div className="container mx-auto text-center space-y-10">  
       <div className="max-w-3xl mx-auto space-y-4">  
-        <h2 className="text-3xl font-bold text-primary">{t("mainClientsNewTitle", "Principais Clientes")}</h2>  
-        <p className="text-lg text-muted-foreground leading-relaxed">{t("mainClientsNewDescription")}</p>  
+        <h2 className="text-3xl font-bold text-primary">{t("clients.mainClientsNewHeader.mainClientsTitle")}</h2>  
+        <p className="text-lg text-muted-foreground leading-relaxed">{t("clients.mainClientsNewHeader.mainClientsDescription")}</p>  
       </div>  
       <div className="grid grid-flow-col auto-cols-max gap-10 overflow-x-auto justify-start md:justify-center pb-4">  
         {mainClientsNew.map((client, index) => (  

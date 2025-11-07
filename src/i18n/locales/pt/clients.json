@@ -3,6 +3,14 @@
     "title": "Clientes e Parceiros",
     "subtitle": "Construímos relacionamentos sólidos com empresas líderes do setor marítimo, baseados na confiança, excelência e resultados consistentes"
   },
+    "mainClientsHeader": {
+      "mainClientsTitle": "Clientes e Parceiros",
+      "mainClientsDescription": "Empresas que confiam em nossa expertise marítima"
+  },
+   "mainClientsNewHeader": {
+      "mainClientsTitle": "Principais Clientes",
+      "mainClientsDescription": "Todos os nossos clientes confiam na Noelza Servicepara serviços especializados de Agenciamento de Navios, Freight Forward e Licenciamento de Navios. Desde 2018, fortalecemos parcerias sólidas que refletem nosso compromisso com a excelência e a eficiência no setor marítimo angolano."
+  },
   "mainClients": [
     {
       "name": "Chouest INN Angola",
@@ -12,7 +20,7 @@
       "sector": "Soluções Marítimas",
       "partnership": "2018",
       "services": ["Licenciamento", "Gestão de Tripulação"],
-      "relationship": "Cliente-Parceiro"
+      "relation": "Cliente-Parceiro"
     },
     {
       "name": "INN Offshore",
@@ -22,7 +30,7 @@
       "sector": "Offshore & Marítimo",
       "partnership": "2022-presente",
       "services": ["Licenciamento", "Agenciamento de Navios", "Gestão de Tripulação", "Freight Forward", "Consultoria Marítima", "Operações Portuárias"],
-      "relationship": "Cliente-Parceiro"
+      "relation": "Cliente-Parceiro"
     },
     {
       "name": "SONILS",
@@ -32,7 +40,7 @@
       "sector": "Logística Integrada",
       "partnership": "2024-presente",
       "services": ["Consultoria Marítima"],
-      "relationship": "Parceiro"
+      "relation": "Parceiro"
     }
   ],
   "mainClientsNew": [
@@ -44,7 +52,7 @@
       "sector": "Soluções Marítimas",
       "partnership": "2018",
       "services": ["Licenciamento", "Gestão de Tripulação", "Operações Portuárias"],
-      "relationship": "Cliente-Parceiro"
+      "relation": "Cliente-Parceiro"
     },
     {
       "name": "Azule Energy",
@@ -54,7 +62,7 @@
       "sector": "Offshore & Marítimo",
       "partnership": "2022-presente",
       "services": ["Agenciamento de Navios", "Freight Forward", "Consultoria Marítima"],
-      "relationship": "Cliente-Parceiro"
+      "relation": "Cliente-Parceiro"
     },
     {
       "name": "Esso Angola",
@@ -64,7 +72,7 @@
       "sector": "Logística Integrada",
       "partnership": "2024-presente",
       "services": ["Freight Forward", "Consultoria", "Compliance Marítimo"],
-      "relationship": "Parceiro"
+      "relation": "Parceiro"
     },
     {
       "name": "Seabulk Offshore Angola, Lda",
@@ -74,7 +82,7 @@
       "sector": "Logística Integrada",
       "partnership": "2024-presente",
       "services": ["Freight Forward", "Consultoria", "Compliance Marítimo"],
-      "relationship": "Parceiro"
+      "relation": "Parceiro"
     },
     {
       "name": "SonaSurf",
@@ -84,7 +92,7 @@
       "sector": "Logística Integrada",
       "partnership": "2024-presente",
       "services": ["Freight Forward", "Consultoria", "Compliance Marítimo"],
-      "relationship": "Parceiro"
+      "relation": "Parceiro"
     }
   ],
   "clientTypes": [

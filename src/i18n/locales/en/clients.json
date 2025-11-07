@@ -1,9 +1,19 @@
 {
   "hero": {
     "title": "Clients and Partners",
-    "subtitle": "We build solid relationships with leading maritime companies based on trust, excellence, and consistent results"
+    "subtitle": "We build solid relations with leading maritime companies based on trust, excellence, and consistent results"
   },
-  "mainClients": [
+
+  "mainClientsHeader": {
+    "mainClientsTitle": "Clients and Partners",
+    "mainClientsDescription": "Companies that trust in our maritime expertise"
+  },
+  "mainClientsNewHeader": {
+        "mainClientsTitle": "Main Clients",
+        "mainClientsDescription": "All of our clients trust Noelza Service for specialized Ship Agency, Freight Forwarding, and Ship Licensing services. Since 2018, we have been strengthening solid partnerships that reflect our commitment to excellence and efficiency in the Angolan maritime sector."
+    },
+  "mainClients": 
+  [
     {
       "name": "Chouest INN Angola",
       "src": "chouest-logo.png",
@@ -12,7 +22,7 @@
       "sector": "Maritime Solutions",
       "partnership": "2018",
       "services": ["Licensing", "Crew Management"],
-      "relationship": "Client-Partner"
+      "relation": "Client-Partner"
     },
     {
       "name": "INN Offshore",
@@ -22,7 +32,7 @@
       "sector": "Offshore & Maritime",
       "partnership": "2022-present",
       "services": ["Licensing", "Ship Agency", "Crew Management", "Freight Forward", "Maritime Consulting", "Port Operations"],
-      "relationship": "Client-Partner"
+      "relation": "Client-Partner"
     },
     {
       "name": "SONILS",
@@ -32,7 +42,7 @@
       "sector": "Integrated Logistics",
       "partnership": "2024-present",
       "services": ["Maritime Consulting"],
-      "relationship": "Partner"
+      "relation": "Partner"
     }
   ],
   "mainClientsNew": [
@@ -44,7 +54,7 @@
       "sector": "Maritime Solutions",
       "partnership": "2018",
       "services": ["Licensing", "Crew Management", "Port Operations"],
-      "relationship": "Client-Partner"
+      "relation": "Client-Partner"
     },
     {
       "name": "Azule Energy",
@@ -54,7 +64,7 @@
       "sector": "Offshore & Maritime",
       "partnership": "2022-present",
       "services": ["Ship Agency", "Freight Forward", "Maritime Consulting"],
-      "relationship": "Client-Partner"
+      "relation": "Client-Partner"
     },
     {
       "name": "Esso Angola",
@@ -64,7 +74,7 @@
       "sector": "Integrated Logistics",
       "partnership": "2024-present",
       "services": ["Freight Forward", "Consulting", "Maritime Compliance"],
-      "relationship": "Partner"
+      "relation": "Partner"
     },
     {
       "name": "Seabulk Offshore Angola, Lda",
@@ -74,7 +84,7 @@
       "sector": "Integrated Logistics",
       "partnership": "2024-present",
       "services": ["Freight Forward", "Consulting", "Maritime Compliance"],
-      "relationship": "Partner"
+      "relation": "Partner"
     },
     {
       "name": "SonaSurf",
@@ -84,7 +94,7 @@
       "sector": "Integrated Logistics",
       "partnership": "2024-present",
       "services": ["Freight Forward", "Consulting", "Maritime Compliance"],
-      "relationship": "Partner"
+      "relation": "Partner"
     }
   ],
   "clientTypes": [
@@ -133,7 +143,7 @@
   "benefits": [
     {
       "icon": "Handshake",
-      "title": "Trust-Based Relationships",
+      "title": "Trust-Based relations",
       "description": "We build long-lasting partnerships based on transparency and results"
     },
     {
