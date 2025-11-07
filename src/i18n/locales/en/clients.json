@@ -1,0 +1,160 @@
+{
+  "hero": {
+    "title": "Clients and Partners",
+    "subtitle": "We build solid relationships with leading maritime companies based on trust, excellence, and consistent results"
+  },
+  "mainClients": [
+    {
+      "name": "Chouest INN Angola",
+      "src": "chouest-logo.png",
+      "alt": "Chouest INN Angola Logo",
+      "description": "Leader in integrated maritime solutions in Angola",
+      "sector": "Maritime Solutions",
+      "partnership": "2018",
+      "services": ["Licensing", "Crew Management"],
+      "relationship": "Client-Partner"
+    },
+    {
+      "name": "INN Offshore",
+      "src": "inn-offshore-logo.png",
+      "alt": "INN Offshore Logo",
+      "description": "Strategic partner in offshore and maritime operations",
+      "sector": "Offshore & Maritime",
+      "partnership": "2022-present",
+      "services": ["Licensing", "Ship Agency", "Crew Management", "Freight Forward", "Maritime Consulting", "Port Operations"],
+      "relationship": "Client-Partner"
+    },
+    {
+      "name": "SONILS",
+      "src": "sonils-logo.png",
+      "alt": "SONILS Logo",
+      "description": "National company providing integrated logistics services",
+      "sector": "Integrated Logistics",
+      "partnership": "2024-present",
+      "services": ["Maritime Consulting"],
+      "relationship": "Partner"
+    }
+  ],
+  "mainClientsNew": [
+    {
+      "name": "Sonangol",
+      "src": "sonangol-logo.png",
+      "alt": "Sonangol Logo",
+      "description": "Leader in integrated maritime solutions in Angola",
+      "sector": "Maritime Solutions",
+      "partnership": "2018",
+      "services": ["Licensing", "Crew Management", "Port Operations"],
+      "relationship": "Client-Partner"
+    },
+    {
+      "name": "Azule Energy",
+      "src": "azule-energy-logo.png",
+      "alt": "Azule Energy Logo",
+      "description": "Strategic partner in offshore and maritime operations",
+      "sector": "Offshore & Maritime",
+      "partnership": "2022-present",
+      "services": ["Ship Agency", "Freight Forward", "Maritime Consulting"],
+      "relationship": "Client-Partner"
+    },
+    {
+      "name": "Esso Angola",
+      "src": "esso-angola-logo.png",
+      "alt": "Esso Angola Logo",
+      "description": "National company providing integrated logistics services",
+      "sector": "Integrated Logistics",
+      "partnership": "2024-present",
+      "services": ["Freight Forward", "Consulting", "Maritime Compliance"],
+      "relationship": "Partner"
+    },
+    {
+      "name": "Seabulk Offshore Angola, Lda",
+      "src": "scabulk-logo.png",
+      "alt": "Seabulk Offshore Logo",
+      "description": "National company providing integrated logistics services",
+      "sector": "Integrated Logistics",
+      "partnership": "2024-present",
+      "services": ["Freight Forward", "Consulting", "Maritime Compliance"],
+      "relationship": "Partner"
+    },
+    {
+      "name": "SonaSurf",
+      "src": "sonasurf-logo.png",
+      "alt": "SonaSurf Logo",
+      "description": "National company providing integrated logistics services",
+      "sector": "Integrated Logistics",
+      "partnership": "2024-present",
+      "services": ["Freight Forward", "Consulting", "Maritime Compliance"],
+      "relationship": "Partner"
+    }
+  ],
+  "clientTypes": [
+    {
+      "icon": "Building2",
+      "title": "Offshore Companies",
+      "count": "12+",
+      "description": "Companies specialized in offshore maritime operations"
+    },
+    {
+      "icon": "Globe",
+      "title": "International Operators",
+      "count": "8+",
+      "description": "Multinational companies operating in Angola"
+    },
+    {
+      "icon": "Users",
+      "title": "Local Shipowners",
+      "count": "15+",
+      "description": "Owners and operators of national vessels"
+    },
+    {
+      "icon": "Award",
+      "title": "Strategic Partnerships",
+      "count": "5+",
+      "description": "Long-term partnerships with companies in the sector"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Efficiency, reliability, and exceptional technical knowledge. We recommend their services without hesitation.",
+      "author": "Maritime Manager",
+      "company": "Chouest INN Angola"
+    },
+    {
+      "quote": "Noelza Service has been key to the success of our maritime operations in Angola. Exemplary professionalism.",
+      "author": "Operations Director",
+      "company": "INN Offshore"
+    },
+    {
+      "quote": "Solid partnership that allows us to focus on our core business while Noelza handles all maritime operations.",
+      "author": "Operations Director",
+      "company": "SONILS"
+    }
+  ],
+  "benefits": [
+    {
+      "icon": "Handshake",
+      "title": "Trust-Based Relationships",
+      "description": "We build long-lasting partnerships based on transparency and results"
+    },
+    {
+      "icon": "Award",
+      "title": "Proven Excellence",
+      "description": "Consistent track record of success and complete client satisfaction"
+    },
+    {
+      "icon": "Globe",
+      "title": "Local Knowledge",
+      "description": "Deep expertise in the Angolan market and local regulations"
+    },
+    {
+      "icon": "Users",
+      "title": "Specialized Team",
+      "description": "Highly skilled professionals dedicated to your success"
+    }
+  ],
+  "cta": {
+    "title": "Ready for a New Partnership?",
+    "subtitle": "Discover how Noelza Service can optimize your maritime operations and become your trusted strategic partner.",
+    "button": "Start Partnership"
+  }
+}

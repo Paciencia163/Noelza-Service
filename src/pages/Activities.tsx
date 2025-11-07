@@ -11,10 +11,10 @@ const Activities = () => {
   ];
 
   const serviceTypes = [
-    { service: "Partida/Chegada da Tripulação", count: "20,979" },
+    { service: "Partida/Chegada da Tripulação", count: "24,687" },
     { service: "Taxa Mensal da Agência", count: "216" },
-    { service: "Taxa de Parto", count: "287" },
-    { service: "Liberação do Porto", count: "156" },
+    { service: "Taxa de Parto", count: "267" },
+    { service: "Liberação do Porto", count: "1,672" },
     { service: "Outros Serviços", count: "44" }
 
     // { service: "Crew Departure/Arrival", count: "20,979" },
