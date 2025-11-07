@@ -97,30 +97,34 @@
   ],
   "clientTypes": [
     {
-      "icon": "Building2",
+      "key": "Building2",
       "title": "Empresas Offshore",
       "count": "12+",
       "description": "Companhias especializadas em operações marítimas offshore"
     },
     {
-      "icon": "Globe",
+      "key": "Globe",
       "title": "Operadores Internacionais",
       "count": "8+",
       "description": "Empresas multinacionais com operações em Angola"
     },
     {
-      "icon": "Users",
+      "key": "Users",
       "title": "Armadores Locais",
       "count": "15+",
       "description": "Proprietários e operadores de embarcações nacionais"
     },
     {
-      "icon": "Award",
+      "key": "Award",
       "title": "Parcerias Estratégicas",
       "count": "5+",
       "description": "Parcerias de longo prazo com empresas do setor"
     }
   ],
+    "testimonial": {
+    "testimonialsTitle": "What Our Clients Say",
+    "testimonialsDescription": "Testimonials that reflect our dedication and quality"
+  },
   "testimonials": [
     {
       "quote": "Eficiência, confiabilidade e conhecimento técnico excepcional. Recomendamos seus serviços sem hesitação.",
@@ -140,26 +144,33 @@
   ],
   "benefits": [
     {
-      "icon": "Handshake",
+      "key": "handshake",
       "title": "Relacionamento de Confiança",
       "description": "Construímos parcerias duradouras baseadas na transparência e resultados"
     },
     {
-      "icon": "Award",
+      "key": "award",
       "title": "Excelência Comprovada",
       "description": "Histórico consistente de sucesso e satisfação total dos clientes"
     },
     {
-      "icon": "Globe",
+      "key": "globe",
       "title": "Conhecimento Local",
       "description": "Expertise profunda do mercado angolano e regulamentações locais"
     },
     {
-      "icon": "Users",
+      "key": "users",
       "title": "Equipe Especializada",
       "description": "Profissionais altamente qualificados e dedicados ao seu sucesso"
     }
   ],
+   "partner": {
+    "partnershipCardTitle": "Seja Nosso Parceiro",
+    "partnershipCardDescription": "Junte-se às empresas líderes que já confiam na Noelza Service para suas operações marítimas em Angola.",
+    "activeClients": "Clientes Ativos",
+    "satisfaction": "Satisfação",
+    "becomeClient": "Torne-se Cliente"
+  },
   "cta": {
     "title": "Pronto para Uma Nova Parceria?",
     "subtitle": "Descubra como a Noelza Service pode otimizar suas operações marítimas e se tornar seu parceiro estratégico de confiança.",

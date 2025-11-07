@@ -97,32 +97,37 @@
       "relation": "Partner"
     }
   ],
+
   "clientTypes": [
     {
-      "icon": "Building2",
+      "key": "Building2",
       "title": "Offshore Companies",
       "count": "12+",
       "description": "Companies specialized in offshore maritime operations"
     },
     {
-      "icon": "Globe",
+      "key": "Globe",
       "title": "International Operators",
       "count": "8+",
       "description": "Multinational companies operating in Angola"
     },
     {
-      "icon": "Users",
+      "key": "Users",
       "title": "Local Shipowners",
       "count": "15+",
       "description": "Owners and operators of national vessels"
     },
     {
-      "icon": "Award",
+      "key": "Award",
       "title": "Strategic Partnerships",
       "count": "5+",
       "description": "Long-term partnerships with companies in the sector"
     }
   ],
+    "testimonial": {
+    "testimonialsTitle": "O Que Dizem Nossos Clientes",
+    "testimonialsDescription": "Depoimentos que refletem nossa dedicação e qualidade"
+  },
   "testimonials": [
     {
       "quote": "Efficiency, reliability, and exceptional technical knowledge. We recommend their services without hesitation.",
@@ -142,26 +147,33 @@
   ],
   "benefits": [
     {
-      "icon": "Handshake",
+      "key": "handshake",
       "title": "Trust-Based relations",
       "description": "We build long-lasting partnerships based on transparency and results"
     },
     {
-      "icon": "Award",
+      "key": "award",
       "title": "Proven Excellence",
       "description": "Consistent track record of success and complete client satisfaction"
     },
     {
-      "icon": "Globe",
+      "key": "globe",
       "title": "Local Knowledge",
       "description": "Deep expertise in the Angolan market and local regulations"
     },
     {
-      "icon": "Users",
+      "key": "Users",
       "title": "Specialized Team",
       "description": "Highly skilled professionals dedicated to your success"
     }
   ],
+  "partner": {
+    "partnershipCardTitle": "Be Our Partner",
+    "partnershipCardDescription": "Join the leading companies that already trust Noelza Service for their maritime operations in Angola.",
+    "activeClients": "Active Clients",
+    "satisfaction": "Satisfaction",
+    "becomeClient": "Become a Customer"
+  },
   "cta": {
     "title": "Ready for a New Partnership?",
     "subtitle": "Discover how Noelza Service can optimize your maritime operations and become your trusted strategic partner.",

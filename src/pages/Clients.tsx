@@ -21,7 +21,7 @@ company: string;
 }
 
 interface Benefit {
-icon: React.ElementType;
+key: any
 title: string;
 description: string;
 }
@@ -41,6 +41,13 @@ const mainClientsNew = t("clients.mainClientsNew", { returnObjects: true }) as C
 const testimonials = t("clients.testimonials", { returnObjects: true }) as Testimonial[];
 const benefits = t("clients.benefits", { returnObjects: true }) as Benefit[];
 const cta = t("clients.cta", { returnObjects: true }) as CTA;
+
+  const iconMap: Record<string, any> = {
+      handshake: Handshake,
+      award: Award,
+      globe: Globe,
+      users: Users,
+    };
 
 return ( <div className="min-h-screen">
 {/* Hero Section */} <section className="section-maritime bg-maritime-gray/20"> <div className="container mx-auto text-center"> <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">{t("clients.hero.title")}</h1> <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">{t("clients.hero.subtitle")}</p> </div> </section>
@@ -110,8 +117,8 @@ return ( <div className="min-h-screen">
   <section className="section-maritime">  
     <div className="container mx-auto">  
       <div className="text-center mb-12">  
-        <h2 className="text-3xl font-bold text-primary mb-4">{t("testimonialsTitle", "O Que Dizem Nossos Clientes")}</h2>  
-        <p className="text-lg text-muted-foreground">{t("testimonialsDescription", "Depoimentos que refletem nossa dedicação e qualidade")}</p>  
+        <h2 className="text-3xl font-bold text-primary mb-4">{t("clients.testimonial.testimonialsTitle")}</h2>  
+        <p className="text-lg text-muted-foreground">{t("clients.testimonial.testimonialsDescription")}</p>  
       </div>  
       <div className="grid md:grid-cols-3 gap-8">  
         {testimonials.map((testimonial, index) => (  
@@ -145,11 +152,13 @@ return ( <div className="min-h-screen">
           <h2 className="text-3xl font-bold text-primary mb-6">{t("benefitsTitle", "Por Que Nos Escolhem?")}</h2>  
           <div className="space-y-6">  
             {benefits.map((benefit, index) => {  
-              const IconComponent = benefit.icon;  
+              // const IconComponent = benefit.icon;  
+              const Icon = iconMap[benefit.key];
               return (  
                 <div key={index} className="flex items-start space-x-4">  
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">  
-                    <IconComponent className="w-6 h-6 text-primary" />  
+                    {/* <IconComponent className="w-6 h-6 text-primary" />   */}
+                     {Icon && <Icon className="w-6 h-6 text-primary" />}
                   </div>  
                   <div>  
                     <h3 className="text-lg font-semibold text-primary mb-2">{benefit.title}</h3>  
@@ -164,19 +173,19 @@ return ( <div className="min-h-screen">
           <Card className="card-maritime">  
             <CardContent className="p-8">  
               <Building2 className="w-24 h-24 text-primary mx-auto mb-6" />  
-              <h3 className="text-2xl font-bold text-primary mb-4">{t("partnershipCardTitle", "Seja Nosso Parceiro")}</h3>  
-              <p className="text-muted-foreground mb-6 leading-relaxed">{t("partnershipCardDescription")}</p>  
+              <h3 className="text-2xl font-bold text-primary mb-4">{t("clients.partner.partnershipCardTitle")}</h3>  
+              <p className="text-muted-foreground mb-6 leading-relaxed">{t("clients.partner.partnershipCardDescription")}</p>  
               <div className="grid grid-cols-2 gap-4 mb-6">  
                 <div className="text-center">  
                   <div className="text-2xl font-bold text-primary">40+</div>  
-                  <p className="text-sm text-muted-foreground">{t("activeClients", "Clientes Ativos")}</p>  
+                  <p className="text-sm text-muted-foreground">{t("clients.partner.activeClients", "Clientes Ativos")}</p>  
                 </div>  
                 <div className="text-center">  
                   <div className="text-2xl font-bold text-accent">100%</div>  
-                  <p className="text-sm text-muted-foreground">{t("satisfaction", "Satisfação")}</p>  
+                  <p className="text-sm text-muted-foreground">{t("clients.partner.satisfaction")}</p>  
                 </div>  
               </div>  
-              <button className="btn-maritime w-full">{t("becomeClient", "Torne-se Cliente")}</button>  
+              <button className="btn-maritime w-full">{t("clients.partner.becomeClient")}</button>  
             </CardContent>  
           </Card>  
         </div>  
