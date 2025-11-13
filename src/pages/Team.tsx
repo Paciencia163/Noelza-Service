@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Target, Award, Briefcase, GraduationCap, Mail } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 interface Hero {
   title: string;
@@ -104,29 +105,51 @@ return ( <div className="min-h-screen">
         <p className="text-lg text-muted-foreground">{t("team.leadership.subtitle")}</p>
       </div>
       <div className="grid md:grid-cols-3 gap-8">
-        {leadership.map((leader, index) => (
-          <Card key={index} className="card-maritime group">
-            <CardContent className="p-8 text-center">
-              <div className="w-24 h-28 mx-auto mb-6 flex items-center justify-center transition-colors duration-300">
-                <img src={leader.src} className="w-full h-full text-primary" alt={leader.alt} />
-              </div>
-              <h3 className="text-xl font-bold text-primary mb-2">{leader.name}</h3>
-              <p className="text-accent font-semibold mb-4">{leader.position}</p>
-              <p className="text-muted-foreground mb-4 leading-relaxed">{leader.description}</p>
-              <div className="grid grid-cols-2 gap-4 text-sm">
-                <div className="text-center">
-                  <p className="font-semibold text-primary">{t("team.leadership.experience")}</p>
-                  <p className="text-muted-foreground">{leader.experience}</p>
-                </div>
-                <div className="text-center">
-                  <p className="font-semibold text-primary">{t("team.leadership.specialization")}</p>
-                  <p className="text-muted-foreground">{leader.specialization}</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+    {leadership.map((leader, index) => (
+      <Card key={index} className="card-maritime group">
+        <CardContent className="p-8 text-center">
+          {/* 🔹 AQUI: aumentamos o tamanho da imagem */}
+          <div className="mx-auto mb-6 flex items-center justify-center transition-colors duration-300">
+            {/* Mantive ambos para compatibilidade, mas você pode deixar só o LazyLoadImage */}
+            <img
+              src={leader.src}
+              className=" text-primary object-cover rounded-md"
+              alt={leader.alt}
+            />
+            <LazyLoadImage
+              src={leader.src}
+              alt={leader.alt}
+              effect="blur"
+              width={44}
+              height={44}
+              className="w-full h-full object-cover rounded-md"
+            />
+          </div>
+
+          <h3 className="text-xl font-bold text-primary mb-2">{leader.name}</h3>
+          <p className="text-accent font-semibold mb-4">{leader.position}</p>
+          <p className="text-muted-foreground mb-4 leading-relaxed">
+            {leader.description}
+          </p>
+          <div className="grid grid-cols-2 gap-4 text-sm">
+            <div className="text-center">
+              <p className="font-semibold text-primary">
+                {t("team.leadership.experience")}
+              </p>
+              <p className="text-muted-foreground">{leader.experience}</p>
+            </div>
+            <div className="text-center">
+              <p className="font-semibold text-primary">
+                {t("team.leadership.specialization")}
+              </p>
+              <p className="text-muted-foreground">{leader.specialization}</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    ))}
+  </div>
+
     </div>
   </section>
 
