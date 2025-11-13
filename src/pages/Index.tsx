@@ -5,6 +5,10 @@ import { Ship, Anchor, Container, Users, ArrowRight, Globe } from "lucide-react"
 import heroImage from "@/assets/maritime-hero.jpg";
 import { useTranslation } from "react-i18next";
 
+// 🧩 Imports necessários para a animação
+import { motion, useInView, useMotionValue, animate } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+
 const Index = () => {
   const { t } = useTranslation();
 
@@ -27,10 +31,10 @@ const Index = () => {
   ];
 
   const stats = [
-    { number: "+233", label: t("home.stats.shipsServed") },
-    { number: "+1,630", label: t("home.stats.inClearance") },
-    { number: "27,979", label: t("home.stats.crewAssisted") },
-    { number: "6+", label: t("home.stats.yearsExperience") },
+    { number: 233, label: t("home.stats.shipsServed") },
+    { number: 1630, label: t("home.stats.inClearance") },
+    { number: 27979, label: t("home.stats.crewAssisted") },
+    { number: 6, label: t("home.stats.yearsExperience") },
   ];
 
   return (
@@ -40,27 +44,35 @@ const Index = () => {
         className="relative h-screen flex items-center justify-center text-center hero-maritime wave-effect"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         <div className="container mx-auto px-4 z-10">
           <div className="max-w-4xl mx-auto text-white">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
               {t("home.hero.title")}
-              {/* <span className="block text-maritime-cyan">{t("home.hero.subtitle")}</span> */}
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in">
               {t("home.hero.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-              <Button asChild size="lg" className="btn-maritime text-lg px-8 py-4">
+              <Button
+                asChild
+                size="lg"
+                className="btn-maritime text-lg px-8 py-4"
+              >
                 <Link to="/servicos">
                   {t("home.hero.ctaServices")}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="btn-outline-maritime text-lg px-8 py-4 bg-white/10 border-white text-white hover:bg-white hover:text-primary">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="btn-outline-maritime text-lg px-8 py-4 bg-white/10 border-white text-white hover:bg-white hover:text-primary"
+              >
                 <Link to="/contato">{t("home.hero.ctaContact")}</Link>
               </Button>
             </div>
@@ -68,19 +80,17 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Stats Section com contagem animada */}
       <section className="section-maritime bg-maritime-gray/20">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-sm md:text-base text-muted-foreground">
-                  {stat.label}
-                </div>
-              </div>
+              <AnimatedStat
+                key={index}
+                number={stat.number}
+                label={stat.label}
+                delay={index * 0.2}
+              />
             ))}
           </div>
         </div>
@@ -101,15 +111,23 @@ const Index = () => {
                 <div className="flex items-start space-x-3">
                   <Globe className="w-6 h-6 text-accent mt-1" />
                   <div>
-                    <h4 className="font-semibold text-primary">{t("home.about.mission.title")}</h4>
-                    <p className="text-muted-foreground">{t("home.about.mission.text")}</p>
+                    <h4 className="font-semibold text-primary">
+                      {t("home.about.mission.title")}
+                    </h4>
+                    <p className="text-muted-foreground">
+                      {t("home.about.mission.text")}
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Users className="w-6 h-6 text-accent mt-1" />
                   <div>
-                    <h4 className="font-semibold text-primary">{t("home.about.vision.title")}</h4>
-                    <p className="text-muted-foreground">{t("home.about.vision.text")}</p>
+                    <h4 className="font-semibold text-primary">
+                      {t("home.about.vision.title")}
+                    </h4>
+                    <p className="text-muted-foreground">
+                      {t("home.about.vision.text")}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -124,29 +142,45 @@ const Index = () => {
               <Card className="card-maritime">
                 <CardContent className="p-6 text-center">
                   <Ship className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h4 className="font-semibold text-primary mb-2">{t("home.features.agency.title")}</h4>
-                  <p className="text-sm text-muted-foreground">{t("home.stats.yearsExperience")}</p>
+                  <h4 className="font-semibold text-primary mb-2">
+                    {t("home.features.agency.title")}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    {t("home.stats.yearsExperience")}
+                  </p>
                 </CardContent>
               </Card>
               <Card className="card-maritime">
                 <CardContent className="p-6 text-center">
                   <Container className="w-12 h-12 text-accent mx-auto mb-4" />
-                  <h4 className="font-semibold text-primary mb-2">{t("home.features.forward.title")}</h4>
-                  <p className="text-sm text-muted-foreground">{t("home.features.forward.text")}</p>
+                  <h4 className="font-semibold text-primary mb-2">
+                    {t("home.features.forward.title")}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    {t("home.features.forward.text")}
+                  </p>
                 </CardContent>
               </Card>
               <Card className="card-maritime">
                 <CardContent className="p-6 text-center">
                   <Anchor className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h4 className="font-semibold text-primary mb-2">{t("home.features.licensing.title")}</h4>
-                  <p className="text-sm text-muted-foreground">{t("home.features.licensing.text")}</p>
+                  <h4 className="font-semibold text-primary mb-2">
+                    {t("home.features.licensing.title")}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    {t("home.features.licensing.text")}
+                  </p>
                 </CardContent>
               </Card>
               <Card className="card-maritime">
                 <CardContent className="p-6 text-center">
                   <Users className="w-12 h-12 text-accent mx-auto mb-4" />
-                  <h4 className="font-semibold text-primary mb-2">{t("home.cta.title")}</h4>
-                  <p className="text-sm text-muted-foreground">{t("home.cta.text")}</p>
+                  <h4 className="font-semibold text-primary mb-2">
+                    {t("home.cta.title")}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    {t("home.cta.text")}
+                  </p>
                 </CardContent>
               </Card>
             </div>
@@ -200,7 +234,12 @@ const Index = () => {
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             {t("home.cta.text")}
           </p>
-          <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-4">
+          <Button
+            asChild
+            size="lg"
+            variant="secondary"
+            className="text-lg px-8 py-4"
+          >
             <Link to="/contato">
               {t("home.cta.button")}
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -213,3 +252,54 @@ const Index = () => {
 };
 
 export default Index;
+
+// 🔢 Componente interno com contagem animada
+function AnimatedStat({
+  number,
+  label,
+  delay = 0,
+}: {
+  number: number;
+  label: string;
+  delay?: number;
+}) {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const isInView = useInView(ref, { once: true });
+  const count = useMotionValue(0);
+  const [displayCount, setDisplayCount] = useState(0);
+  const [highlight, setHighlight] = useState(false);
+
+  // ⚙️ Inicia a animação quando entra em view
+  useEffect(() => {
+    if (isInView) {
+      const controls = animate(count, number, {
+        duration: 2,
+        delay,
+        ease: "easeOut",
+        onUpdate: (v) => setDisplayCount(Math.floor(v)),
+          onComplete: () => {
+        // Ativa o highlight quando termina a contagem
+        setHighlight(true);
+        setTimeout(() => setHighlight(false), 600); // remove depois de 0.6s
+      },
+      });
+      return controls.stop; // Limpa ao desmontar
+    }
+  }, [isInView, number, delay]);
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ y: 50, opacity: 0 }}
+      animate={isInView ? { y: 0, opacity: 1 } : {}}
+      transition={{ duration: 0.5, delay }}
+      className="text-center"
+    >
+      <div className={`text-3xl md:text-4xl font-bold text-primary mb-2 ${highlight ? 'animate-pulse-glow' : ''}`}>
+      {/* <div className="text-3xl md:text-4xl font-bold text-primary mb-2"> */}
+        {displayCount.toLocaleString()}+
+      </div>
+      <div className="text-sm md:text-base text-muted-foreground">{label}</div>
+    </motion.div>
+  );
+}

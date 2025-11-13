@@ -464,7 +464,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       </section>
     </div>
 
-    );
+      );
     };
 
     export default Contact;

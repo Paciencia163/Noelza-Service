@@ -10,6 +10,8 @@ import {
 import { useTranslation } from "react-i18next";
 import shippingPortImage from "@/assets/shipping-port.jpg";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { motion, useInView, useMotionValue, animate } from "framer-motion";
 
 const iconMap: Record<string, React.ElementType> = {
   BarChart3,
@@ -53,12 +55,11 @@ interface CTA {
 
 const Activities = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
-    const navigate = useNavigate()
-  
-     const handleClick = () => {
-      navigate("/contato#form-id");
-    };
+  const handleClick = () => {
+    navigate("/contato#form-id");
+  };
 
   const stats2024 = t("activities.stats2024", { returnObjects: true }) as Stat[];
   const serviceTypes = t("activities.serviceTypes", { returnObjects: true }) as ServiceType[];
@@ -87,7 +88,7 @@ const Activities = () => {
         </div>
       </section>
 
-      {/* 2024 Statistics */}
+      {/* 2024 Statistics - AGORA COM ANIMAÇÃO */}
       <section className="section-maritime bg-maritime-gray/20">
         <div className="container mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold text-primary mb-4">
@@ -101,19 +102,14 @@ const Activities = () => {
           {stats2024.map((stat, index) => {
             const Icon = iconMap[stat.icon];
             return (
-              <Card key={index} className="card-maritime group">
-                <CardContent className="p-8 text-center">
-                  <Icon
-                    className={`w-16 h-16 mx-auto mb-4 ${stat.color} group-hover:scale-110 transition-transform duration-300`}
-                  />
-                  <div className={`text-4xl font-bold mb-2 ${stat.color}`}>
-                    {stat.number}
-                  </div>
-                  <p className="text-muted-foreground font-medium">
-                    {stat.label}
-                  </p>
-                </CardContent>
-              </Card>
+              <AnimatedStatCard
+                key={index}
+                Icon={Icon}
+                color={stat.color}
+                label={stat.label}
+                number={stat.number}
+                delay={index * 0.2}
+              />
             );
           })}
         </div>
@@ -259,7 +255,10 @@ const Activities = () => {
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             {cta.subtitle}
           </p>
-          <button onClick={handleClick} className="btn-maritime bg-primary-foreground text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary-foreground/90 transition-colors">
+          <button
+            onClick={handleClick}
+            className="btn-maritime bg-primary-foreground text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary-foreground/90 transition-colors"
+          >
             {cta.button}
           </button>
         </div>
@@ -269,3 +268,55 @@ const Activities = () => {
 };
 
 export default Activities;
+
+/* 🔢 Componente interno para animar os números */
+function AnimatedStatCard({
+  Icon,
+  color,
+  label,
+  number,
+  delay = 0,
+}: {
+  Icon: React.ElementType;
+  color: string;
+  label: string;
+  number: string;
+  delay?: number;
+}) {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const isInView = useInView(ref, { once: true });
+  const count = useMotionValue(0);
+  const [displayCount, setDisplayCount] = useState(0);
+  const target = parseInt(number.replace(/\D/g, ""), 10) || 0;
+   const [highlight, setHighlight] = useState(false);
+
+  useEffect(() => {
+    if (isInView) {
+      const controls = animate(count, target, {
+        duration: 2,
+        delay,
+        ease: "easeOut",
+        onUpdate: (v) => setDisplayCount(Math.floor(v)),
+         onComplete: () => {
+        // Ativa o highlight quando termina a contagem
+        setHighlight(true);
+        setTimeout(() => setHighlight(false), 600); // remove depois de 0.6s
+      },
+      });
+      return controls.stop;
+    }
+  }, [isInView, target, delay]);
+
+  return (
+    <Card ref={ref} className="card-maritime group">
+      <CardContent className="p-8 text-center">
+        <Icon className={`w-16 h-16 mx-auto mb-4 ${color} group-hover:scale-110 transition-transform duration-300`} />
+         <div className={`text-4xl font-bold mb-2 ${color} ${highlight ? 'animate-pulse-glow' : ''}`}>
+        {/* <div className={`text-4xl font-bold mb-2 ${color}`}> */}
+          {displayCount.toLocaleString()}+
+        </div>
+        <p className="text-muted-foreground font-medium">{label}</p>
+      </CardContent>
+    </Card>
+  );
+}
