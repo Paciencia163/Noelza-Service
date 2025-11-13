@@ -1,4 +1,5 @@
     import { useRef, useState } from "react";
+    import emailjs from "emailjs-com";
 
     import { MapContainer, TileLayer, Marker, Popup, ZoomControl, Tooltip } from "react-leaflet";
     
@@ -73,21 +74,119 @@ const offices = [
   // Coordenadas de exemplo (pode mudar para a localização real)
   const position: [number, number] = [-8.839, 13.289]; // Luanda, Angola
 
-    const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+    // const handleSubmit = (e: React.FormEvent) => {
+    // e.preventDefault();
+    // toast({
+    // title: t("contact.form.submit") + "!",
+    // description: t("contact.form.thankYou", "Entraremos em contato em breve. Obrigado pelo interesse!"),
+    // });
+    // setFormData({
+    // name: "",
+    // email: "",
+    // company: "",
+    // phone: "",
+    // service: "",
+    // message: ""
+    // });
+    // };
+
+//     const handleSubmit = (e: React.FormEvent) => {
+//   e.preventDefault();
+
+//   emailjs
+//     .send(
+//       import.meta.env.VITE_EMAILJS_SERVICE_ID,
+//       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,   // substitui com o teu Template ID
+//       {
+//         name: formData.name,
+//         email: formData.email,
+//         company: formData.company,
+//         phone: formData.phone,
+//         service: formData.service,
+//         message: formData.message,
+//       },
+//        import.meta.env.VITE_EMAILJS_PUBLIC_KEY       // substitui com o teu Public Key
+//     )
+//     .then(
+//       () => {
+//         toast({
+//           title: t("contact.form.submit") + "!",
+//           description: t("contact.form.thankYou", "Entraremos em contato em breve. Obrigado pelo interesse!"),
+//         });
+//         setFormData({
+//           name: "",
+//           email: "",
+//           company: "",
+//           phone: "",
+//           service: "",
+//           message: "",
+//         });
+//       },
+//       (error) => {
+//         console.error("Erro ao enviar e-mail:", error);
+//         toast({
+//           title: "Erro ao enviar!",
+//           description: "Por favor, tente novamente em instantes.",
+//           variant: "destructive",
+//         });
+//       }
+//     );
+// };
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    // 1️⃣ Envia o e-mail para a empresa
+    await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // template principal (empresa)
+      {
+        name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        phone: formData.phone,
+        service: formData.service,
+        message: formData.message,
+        year: new Date().getFullYear(),
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    );
+
+    // 2️⃣ Envia o e-mail automático de confirmação ao cliente
+    await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_AUTOREPLY, // ID do template de resposta automática
+      {
+        name: formData.name,
+        email: formData.email,
+        year: new Date().getFullYear(),
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    );
+
     toast({
-    title: t("contact.form.submit") + "!",
-    description: t("contact.form.thankYou", "Entraremos em contato em breve. Obrigado pelo interesse!"),
+      title: t("contact.form.submit") + "!",
+      description: t("contact.form.thankYou", "Entraremos em contato em breve. Obrigado pelo interesse!"),
     });
+
     setFormData({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    service: "",
-    message: ""
+      name: "",
+      email: "",
+      company: "",
+      phone: "",
+      service: "",
+      message: "",
     });
-    };
+  } catch (error) {
+    console.error("Erro ao enviar e-mail:", error);
+    toast({
+      title: "Erro ao enviar!",
+      description: "Por favor, tente novamente em instantes.",
+      variant: "destructive",
+    });
+  }
+};
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
