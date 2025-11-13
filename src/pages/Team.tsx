@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Users, Target, Award, Briefcase, GraduationCap, Mail } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useNavigate } from "react-router-dom";
 
 interface Hero {
   title: string;
@@ -59,6 +60,12 @@ interface Cta {
 
 const Team = () => {
 const { t } = useTranslation();
+
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate("/contato#form-id");
+  };
 
 const hero = t("team.hero", { returnObjects: true }) as Hero;
 const leadership = t("team.leadership.members", { returnObjects: true }) as Leader[];
@@ -276,7 +283,7 @@ return ( <div className="min-h-screen">
                   <span key={idx} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">{area}</span>
                 ))}
               </div>
-              <button className="btn-maritime w-full">{join.workWithUs.button}</button>
+              {/* <button className="btn-maritime w-full">{join.workWithUs.button}</button> */}
             </div>
           </CardContent>
         </Card>
@@ -289,7 +296,7 @@ return ( <div className="min-h-screen">
     <div className="container mx-auto text-center">
       <h2 className="text-3xl font-bold mb-6">{cta.title}</h2>
       <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">{cta.subtitle}</p>
-      <button className="btn-maritime bg-primary-foreground text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary-foreground/90 transition-colors">{cta.button}</button>
+      <button onClick={handleClick} className="btn-maritime bg-primary-foreground text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary-foreground/90 transition-colors">{cta.button}</button>
     </div>
   </section>
 </div>

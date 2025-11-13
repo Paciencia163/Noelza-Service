@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import shippingPortImage from "@/assets/shipping-port.jpg";
+import { useNavigate } from "react-router-dom";
 
 const iconMap: Record<string, React.ElementType> = {
   BarChart3,
@@ -52,6 +53,12 @@ interface CTA {
 
 const Activities = () => {
   const { t } = useTranslation();
+
+    const navigate = useNavigate()
+  
+     const handleClick = () => {
+      navigate("/contato#form-id");
+    };
 
   const stats2024 = t("activities.stats2024", { returnObjects: true }) as Stat[];
   const serviceTypes = t("activities.serviceTypes", { returnObjects: true }) as ServiceType[];
@@ -252,7 +259,7 @@ const Activities = () => {
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             {cta.subtitle}
           </p>
-          <button className="btn-maritime bg-primary-foreground text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary-foreground/90 transition-colors">
+          <button onClick={handleClick} className="btn-maritime bg-primary-foreground text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary-foreground/90 transition-colors">
             {cta.button}
           </button>
         </div>

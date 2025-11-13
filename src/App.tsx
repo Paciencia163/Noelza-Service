@@ -13,6 +13,7 @@ import Clients from "./pages/Clients";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import { ScrollToHash } from "./components/ScrollToHash";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-1">
+            <ScrollToHash />
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/sobre" element={<About />} />

@@ -247,7 +247,7 @@ const offices = [
                     {t("contact.contactInfo.emergency.description")}
                     {contactEmergency && <span className="block"> +244 {contactEmergency}</span>}
                   </p>
-                  <Button className="btn-maritime w-full">{t("contact.contactInfo.emergency.button")}</Button>
+                  {/* <Button className="btn-maritime w-full">{t("contact.contactInfo.emergency.button")}</Button> */}
                 </CardContent>
               </Card>
             </div>

@@ -10,6 +10,7 @@ import {
   Shield,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Link, useNavigate } from "react-router-dom";
 
 const iconMap: Record<string, React.ElementType> = {
   Ship,
@@ -24,6 +25,12 @@ const iconMap: Record<string, React.ElementType> = {
 
 const Services = () => {
   const { t } = useTranslation();
+
+  const navigate = useNavigate()
+
+   const handleClick = () => {
+    navigate("/contato#form-id");
+  };
 
   const mainServices = t("services.mainServices", { returnObjects: true }) as {
     icon: string;
@@ -195,6 +202,7 @@ const Services = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {cta.buttons.map((btn, index) => (
               <button
+              onClick={handleClick}
                 key={index}
                 className={`${
                   index === 0
@@ -202,7 +210,9 @@ const Services = () => {
                     : "btn-outline-maritime border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-all"
                 } px-8 py-4 rounded-lg font-semibold`}
               >
-                {btn.label}
+                 {btn.label}
+                 {/* <Link to={btn.href}>{btn.label}</Link> */}
+                
               </button>
             ))}
           </div>
