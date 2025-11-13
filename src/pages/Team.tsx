@@ -172,7 +172,8 @@ return ( <div className="min-h-screen">
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-primary">{dept.name}</h3>
-                    <p className="text-accent font-semibold">{dept.members} {t("team.departments.professionals")}</p>
+                    <p className="text-accent font-semibold">{dept.members}</p>
+                    {/* <p className="text-accent font-semibold">{dept.members} {t("team.departments.professionals")}</p> */}
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{dept.description}</p>
