@@ -1,9 +1,26 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Anchor, Mail, Phone, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useRef } from "react";
 
 const Footer = () => {
   const { t } = useTranslation();
+
+    const navigate = useNavigate();
+  const pressTimer = useRef<NodeJS.Timeout | null>(null);
+
+  // Quando o usuário começa a pressionar
+  const handleMouseDown = () => {
+    pressTimer.current = setTimeout(() => {
+      navigate("/noelza-admin-panel"); // 👉 sua página admin
+      // navigate("/admin-noelza-84592"); // 👉 sua página admin
+    }, 2000); // 3 segundos
+  };
+
+  // Quando solta antes dos 3s → cancela o long press
+  const handleMouseUp = () => {
+    if (pressTimer.current) clearTimeout(pressTimer.current);
+  };
 
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -13,7 +30,15 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-12 h-12 bg-slate-200 p-1 rounded-lg flex items-center justify-center">
-                <img src="./Noelza.png" alt="" />
+                <img 
+                  src="./Noelza.png" 
+                  alt="Noelza Logo"
+                  onMouseDown={handleMouseDown}
+                  onMouseUp={handleMouseUp}
+                  onMouseLeave={handleMouseUp}
+                  onTouchStart={handleMouseDown}
+                  onTouchEnd={handleMouseUp}
+                  />
               </div>
               <div>
                 <h3 className="text-xl font-bold">{t("footer.company.name")}</h3>

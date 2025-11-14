@@ -5,13 +5,70 @@ import { Ship, Anchor, Container, Users, ArrowRight, Globe } from "lucide-react"
 import heroImage from "@/assets/maritime-hero.jpg";
 import { useTranslation } from "react-i18next";
 
-// 🧩 Imports necessários para a animação
+// 🧩 Animations
 import { motion, useInView, useMotionValue, animate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { db } from "@/firebase";
+import { doc, getDoc } from "firebase/firestore";
+
+interface StatsHome {
+  shipsServed: string;
+  inClearance: string;
+  crewAssisted: string;
+  yearsExperience: string;
+}
 
 const Index = () => {
   const { t } = useTranslation();
 
+  // 🟦 Valores estáticos para fallback
+  const fallbackStats: StatsHome = {
+    shipsServed: "+233 Navios Atendidos",
+    inClearance: "+1630 Navios em Clearance",
+    crewAssisted: "27979 Tripulantes Assistidos",
+    yearsExperience: "6 Anos de Experiência",
+  };
+
+  // 🔢 Estado para stats do Firebase
+  const [statsHome, setStatsHome] = useState<StatsHome>(fallbackStats);
+
+  useEffect(() => {
+    async function fetchStats() {
+      try {
+        // ⏳ Timeout manual para evitar ficar preso sem internet
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 5000);
+
+        const docRef = doc(db, "statsHome", "currentStats");
+        const docSnap = await getDoc(docRef);
+
+        clearTimeout(timeout);
+
+        if (docSnap.exists()) {
+          setStatsHome(docSnap.data() as StatsHome);
+        } else {
+          console.warn("Firestore documento não encontrado. Usando fallback.");
+          setStatsHome(fallbackStats);
+        }
+      } catch (error) {
+        console.error("Erro ao buscar stats do Firestore:", error);
+        // 🔥 FALLBACK EM CASO DE ERRO OU SEM INTERNET
+        setStatsHome(fallbackStats);
+      }
+    }
+
+    fetchStats();
+  }, []);
+
+  // 🔢 Stats para animação + traduções
+  const statsArray = [
+    { number: parseInt(statsHome.shipsServed.replace(/\D/g, "")), label: t("home.stats.shipsServed") },
+    { number: parseInt(statsHome.inClearance.replace(/\D/g, "")), label: t("home.stats.inClearance") },
+    { number: parseInt(statsHome.crewAssisted.replace(/\D/g, "")), label: t("home.stats.crewAssisted") },
+    { number: parseInt(statsHome.yearsExperience.replace(/\D/g, "")), label: t("home.stats.yearsExperience") },
+  ];
+
+  // Features
   const features = [
     {
       icon: Ship,
@@ -28,13 +85,6 @@ const Index = () => {
       title: t("home.features.licensing.title"),
       description: t("home.features.licensing.text"),
     },
-  ];
-
-  const stats = [
-    { number: 233, label: t("home.stats.shipsServed") },
-    { number: 1630, label: t("home.stats.inClearance") },
-    { number: 27979, label: t("home.stats.crewAssisted") },
-    { number: 6, label: t("home.stats.yearsExperience") },
   ];
 
   return (
@@ -80,11 +130,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Section com contagem animada */}
+      {/* Stats Section */}
       <section className="section-maritime bg-maritime-gray/20">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
+            {statsArray.map((stat, index) => (
               <AnimatedStat
                 key={index}
                 number={stat.number}
@@ -138,6 +188,7 @@ const Index = () => {
                 </Link>
               </Button>
             </div>
+
             <div className="grid grid-cols-2 gap-4">
               <Card className="card-maritime">
                 <CardContent className="p-6 text-center">
@@ -150,6 +201,7 @@ const Index = () => {
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="card-maritime">
                 <CardContent className="p-6 text-center">
                   <Container className="w-12 h-12 text-accent mx-auto mb-4" />
@@ -161,6 +213,7 @@ const Index = () => {
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="card-maritime">
                 <CardContent className="p-6 text-center">
                   <Anchor className="w-12 h-12 text-primary mx-auto mb-4" />
@@ -172,6 +225,7 @@ const Index = () => {
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="card-maritime">
                 <CardContent className="p-6 text-center">
                   <Users className="w-12 h-12 text-accent mx-auto mb-4" />
@@ -199,6 +253,7 @@ const Index = () => {
               {t("home.features.forward.text")}
             </p>
           </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <Card key={index} className="card-maritime group">
@@ -214,6 +269,7 @@ const Index = () => {
               </Card>
             ))}
           </div>
+
           <div className="text-center mt-12">
             <Button asChild className="btn-maritime">
               <Link to="/servicos">
@@ -253,7 +309,7 @@ const Index = () => {
 
 export default Index;
 
-// 🔢 Componente interno com contagem animada
+// 🔢 Component AnimatedStat
 function AnimatedStat({
   number,
   label,
@@ -269,7 +325,6 @@ function AnimatedStat({
   const [displayCount, setDisplayCount] = useState(0);
   const [highlight, setHighlight] = useState(false);
 
-  // ⚙️ Inicia a animação quando entra em view
   useEffect(() => {
     if (isInView) {
       const controls = animate(count, number, {
@@ -277,13 +332,12 @@ function AnimatedStat({
         delay,
         ease: "easeOut",
         onUpdate: (v) => setDisplayCount(Math.floor(v)),
-          onComplete: () => {
-        // Ativa o highlight quando termina a contagem
-        setHighlight(true);
-        setTimeout(() => setHighlight(false), 600); // remove depois de 0.6s
-      },
+        onComplete: () => {
+          setHighlight(true);
+          setTimeout(() => setHighlight(false), 600);
+        },
       });
-      return controls.stop; // Limpa ao desmontar
+      return controls.stop;
     }
   }, [isInView, number, delay]);
 
@@ -295,8 +349,11 @@ function AnimatedStat({
       transition={{ duration: 0.5, delay }}
       className="text-center"
     >
-      <div className={`text-3xl md:text-4xl font-bold text-primary mb-2 ${highlight ? 'animate-pulse-glow' : ''}`}>
-      {/* <div className="text-3xl md:text-4xl font-bold text-primary mb-2"> */}
+      <div
+        className={`text-3xl md:text-4xl font-bold text-primary mb-2 ${
+          highlight ? "animate-pulse-glow" : ""
+        }`}
+      >
         {displayCount.toLocaleString()}+
       </div>
       <div className="text-sm md:text-base text-muted-foreground">{label}</div>
