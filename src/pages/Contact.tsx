@@ -30,6 +30,7 @@ const blueIcon = new L.Icon({
   iconSize: [25, 41],
 });
 
+
 const redIcon = new L.Icon({
   iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png",
   shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
@@ -42,10 +43,46 @@ const redIcon = new L.Icon({
 
 // Coordenadas dos escritórios
 const offices = [
-  { nameKey: "main", coords: [-8.838333, 13.234444], icon: blueIcon },
-  { nameKey: "operations", coords: [-8.820000, 13.230000], icon: redIcon },
+  { nameKey: "main", coords: [-8.893820648252918, 13.194284846766296], icon: blueIcon },
+  { nameKey: "operations", coords: [-8.814644726294512, 13.230207803798267], icon: redIcon },
 ];
+// -8.893820648252918, 13.194284846766296
+// -8.801072673617872, 13.25766815845166 - sonils
+// -8.814610401347652, 13.230382554328326 - porto de luanda
+// -8.814644726294512, 13.230207803798267 - porto de luanda
 
+// ------------------- new form start -------------------
+
+// import { useState } from 'react';
+
+// export default function ContactForm() {
+//   const [result, setResult] = useState("");
+
+//   const onSubmit = async (event) => {
+//     event.preventDefault();
+//     const formData = new FormData(event.target);
+//     formData.append("access_key", "6c88a714-e4dc-4c6c-b5e7-c0458bdf4471");
+
+//     const response = await fetch("https://api.web3forms.com/submit", {
+//       method: "POST",
+//       body: formData
+//     });
+
+//     const data = await response.json();
+//     setResult(data.success ? "Success!" : "Error");
+//   };
+
+//   return (
+//     <form onSubmit={onSubmit}>
+//       <input type="text" name="name" required/>
+//       <input type="email" name="email" required/>
+//       <textarea name="message" required></textarea>
+//       <button type="submit">Submit</button>
+//       <p>{result}</p>
+//     </form>
+//   );
+// }
+// ------------------- new form end -------------------
 
     const Contact = () => {
     const { t } = useTranslation();
@@ -133,6 +170,7 @@ const offices = [
 //     );
 // };
 
+// com envio e reenvio
 const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 

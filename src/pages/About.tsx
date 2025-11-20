@@ -40,7 +40,6 @@ return ( <div className="min-h-screen">
 {t("about.hero.title")} </h1> <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
 {t("about.hero.description")} </p> </div> </section>
 
-```
   {/* Company Info */}
   <section className="section-maritime">
     <div className="container mx-auto">
