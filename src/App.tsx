@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
+import { ScrollToTop } from "./components/ScrollToTop";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PasswordGate from "./components/PasswordGate";
@@ -43,6 +44,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           {/* Páginas normais com Header/Footer */}
           <Route element={<MainLayout />}>
