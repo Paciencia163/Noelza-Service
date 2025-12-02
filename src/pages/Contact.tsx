@@ -43,7 +43,7 @@ const redIcon = new L.Icon({
 
 // Coordenadas dos escritórios
 const offices = [
-  { nameKey: "main", coords: [-8.893238729348031, 13.194025348604233], icon: blueIcon },
+  { nameKey: "main", coords: [-8.893736784802982, 13.194131078503478], icon: blueIcon },
   { nameKey: "operations", coords: [-8.814644726294512, 13.230207803798267], icon: redIcon },
 ];
 // -8.893820648252918, 13.194284846766296
