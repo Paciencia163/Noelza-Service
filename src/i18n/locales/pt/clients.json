@@ -5,11 +5,11 @@
   },
     "mainClientsHeader": {
       "mainClientsTitle": "Clientes e Parceiros",
-      "mainClientsDescription": "Empresas que confiam em nossa expertise marítima"
+      "mainClientsDescription": "Empresas que confiam em nossa experiência marítima"
   },
    "mainClientsNewHeader": {
       "mainClientsTitle": "Principais Clientes",
-      "mainClientsDescription": "Todos os nossos clientes confiam na Noelza Servicepara serviços especializados de Agenciamento de Navios, Freight Forward e Licenciamento de Navios. Desde 2018, fortalecemos parcerias sólidas que refletem nosso compromisso com a excelência e a eficiência no setor marítimo angolano."
+      "mainClientsDescription": "Todos os nossos clientes confiam na Noelza Service para serviços especializados de Agenciamento de Navios, Freight Forward e Licenciamento de Navios. Desde 2018, fortalecemos parcerias sólidas que refletem nosso compromisso com a excelência e a eficiência no setor marítimo angolano."
   },
   "mainClients": [
     {
@@ -126,7 +126,7 @@
     }
   ],
     "testimonial": {
-    "testimonialsTitle": "What Our Clients Say",
+    "testimonialsTitle": "O Que Dizem Nossos Clientes",
     "testimonialsDescription": "Testimonials that reflect our dedication and quality"
   },
   "testimonials": [
@@ -160,7 +160,7 @@
     {
       "key": "globe",
       "title": "Conhecimento Local",
-      "description": "Expertise profunda do mercado angolano e regulamentações locais"
+      "description": "Experiência profunda do mercado angolano e regulamentações locais"
     },
     {
       "key": "users",
