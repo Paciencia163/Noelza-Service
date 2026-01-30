@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "title": "About Noelza Service",
+    "description": "A company specialized in maritime solutions, offering ship agency and freight forward services with excellence since 2018."
+  },
+  "history": {
+    "title": "Our History",
+    "paragraph1": "Founded on February 14, 2018, Noelza Service was created to provide professional and efficient solutions for the Angolan maritime sector. Our journey has been marked by growth, reorganization, and market consolidation.",
+    "paragraph2": "After a period of strategic reorganization, we resumed operations with a renewed structure and strong partnerships, establishing ourselves as a reference in ship agency and freight forward."
+  },
+  "timeline": [
+    {
+      "date": "14/02/2018",
+      "title": "Constitution",
+      "description": "Official founding of Noelza Service"
+    },
+    {
+      "date": "2019/2022",
+      "title": "Pause",
+      "description": "Period of strategic reorganization"
+    },
+    {
+      "date": "2023",
+      "title": "Reactivation",
+      "description": "Resumption of activities with new structure"
+    },
+    {
+      "date": "2023/2024",
+      "title": "Commercial Agreement",
+      "description": "Establishment of strategic partnerships"
+    },
+    {
+      "date": "2024",
+      "title": "Full Operation",
+      "description": "Full operation with outstanding results"
+    }
+  ],
+  "values": [
+    {
+      "title": "Excellence",
+      "description": "Commitment to quality in all services provided"
+    },
+    {
+      "title": "Professionalism",
+      "description": "Highly qualified and dedicated team"
+    },
+    {
+      "title": "Reliability",
+      "description": "Safe and efficient solutions for our clients"
+    }
+  ],
+  "team": {
+    "title": "Multidisciplinary Team",
+    "description": "Our team is composed of dedicated and efficient professionals with extensive experience in the maritime sector and committed to excellence in service.",
+    "members": [
+      {
+        "role": "Executive Management",
+        "description": "Strategic leadership and market vision"
+      },
+      {
+        "role": "Operations",
+        "description": "Efficient management of maritime processes"
+      },
+      {
+        "role": "Consulting",
+        "description": "Experts in maritime regulation"
+      }
+    ]
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "Solve all legal procedures required among stakeholders, providing convenience and efficiency to clients."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "description": "Establish strong and persistent partnerships in the shipping sector, recognized for excellence and professionalism."
+  }
+}
