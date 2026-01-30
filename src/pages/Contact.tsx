@@ -43,9 +43,10 @@ const redIcon = new L.Icon({
 
 // Coordenadas dos escritórios
 const offices = [
-  { nameKey: "main", coords: [-8.893615170747264, 13.19392103873842], icon: blueIcon },
-  { nameKey: "operations", coords: [-8.814644726294512, 13.230207803798267], icon: redIcon },
+  { nameKey: "main", coords: [-8.893615170747264, 13.19392103873842], icon: blueIcon, name: "Noelza Service LDA." },
+  { nameKey: "operations", coords: [-8.800869533482668,  13.257564966573279], icon: redIcon, name: "SONILS" },
 ];
+
 
 // -8.893820648252918, 13.194284846766296
 // -8.801072673617872, 13.25766815845166 - sonils
@@ -445,18 +446,28 @@ const handleSubmit = async (e: React.FormEvent) => {
         </div>
 
         {/* Botão abrir no Google Maps */}
-     <Button
-  className="btn-maritime w-full"
-  onClick={() => {
-    // Abrir a página da empresa no Google Maps
-    window.open(
-  `https://www.google.com/maps/search/?api=1&query=${offices[0].coords[0]},${offices[0].coords[1]}+${encodeURIComponent('Noelza Service LDA.')}`,
-  "_blank"
-);
-  }}
->
-  {t("contact.office.viewMapButton")}
-</Button>
+<div className="space-y-3">
+  <p className="text-sm text-muted-foreground mb-2 font-semibold">
+    Selecione qual escritório visualizar:
+  </p>
+  
+  {offices.map((office, idx) => (
+    <Button
+      key={idx}
+      variant="outline"
+      className="w-full justify-start"
+      onClick={() => {
+        window.open(
+          `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(t(`${office.name}`))}`,
+          "_blank"
+        );
+      }}
+    >
+      <MapPin className="w-4 h-4 mr-2" />
+      {t(`contact.office.${office.nameKey}`)}
+    </Button>
+  ))}
+</div>
       </CardContent>
     </Card>
             </div>
