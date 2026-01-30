@@ -13,6 +13,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Activities from "./pages/Activities";
+import AtivitiesPast from "./pages/AtivitiesPast";
 import Clients from "./pages/Clients";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
@@ -51,6 +52,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/sobre" element={<About />} />
             <Route path="/servicos" element={<Services />} />
+            <Route path="/atividades-passadas" element={<AtivitiesPast />} />
             <Route path="/atividades" element={<Activities />} />
             <Route path="/clientes" element={<Clients />} />
             <Route path="/equipe" element={<Team />} />

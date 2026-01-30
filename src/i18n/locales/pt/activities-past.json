@@ -1,22 +1,21 @@
 {
   "hero": {
-    "title": "Actividades e Experiência",
-    "subtitle": "Resultados excepcionais em 2025 demonstram nossa competência e dedicação no setor marítimo angolano"
+    "title": "Actividades Passadas",
+    "subtitle": "Resultados excepcionais em 2024 demonstram nossa competência e dedicação no setor marítimo angolano"
   },
-  "statsTitle": "Resultados de 2025",
-  "statsTitle2025": "Resultados de 2025",
+  "statsTitle": "Resultados de 2024",
+  "statsTitle2024": "Resultados de 2024",
   "statsSubtitle": "Números que refletem nossa excelência operacional",
 
-  "stats2025": [
+  "stats2024": [
     { "number": "+216", "label": "Navios Atendidos", "icon": "Ship", "color": "text-primary" },
     { "number": "+1,269", "label": "Navios em Clearency", "icon": "FileCheck", "color": "text-accent" },
     { "number": "20,979", "label": "Tripulantes Assistidos", "icon": "Users", "color": "text-maritime-teal" },
     { "number": "100%", "label": "Taxa de Satisfação", "icon": "TrendingUp", "color": "text-maritime-gold" }
   ],
-  "buttonActivitiesPast": "Ver Actividades Passadas",
   "services": {
     "title": "Tipos de Serviços Prestados",
-    "description": "Distribuição dos nossos serviços ao longo de 2025, demonstrando nossa versatilidade e capacidade de atendimento.",
+    "description": "Distribuição dos nossos serviços ao longo de 2024, demonstrando nossa versatilidade e capacidade de atendimento.",
     "operations": "operações",
     "cardTitle": "Diversificação de Serviços",
     "cardDescription": "Nossa ampla gama de serviços permite atender às mais diversas necessidades do sector marítimo.",
@@ -34,7 +33,7 @@
   ],
   
   "performance": {
-    "title": "Performance Mensal 2025",
+    "title": "Performance Mensal 2024",
     "subtitle": "Evolução consistente ao longo do ano",
     "shipsTitle": "Navios Atendidos por Mês",
     "crewTitle": "Tripulantes Assistidos por Mês",
@@ -56,13 +55,13 @@
   "highlightsTitle": "Destaques da Nossa Experiência",
   "highlightsSubtitle": "Marcos importantes que demonstram nossa competência",
   "highlights": [
-    { "icon": "Calendar", "title": "Operação Contínua", "description": "Atendimento ininterrupto durante todo o ano de 2025, garantindo suporte 24/7 para nossos clientes.", "color": "text-primary" },
+    { "icon": "Calendar", "title": "Operação Contínua", "description": "Atendimento ininterrupto durante todo o ano de 2024, garantindo suporte 24/7 para nossos clientes.", "color": "text-primary" },
     { "icon": "TrendingUp", "title": "Crescimento Consistente", "description": "Crescimento sustentável em volume de operações e diversificação de serviços ao longo do ano.", "color": "text-accent" },
     { "icon": "FileCheck", "title": "Excelência Operacional", "description": "100% de conformidade com regulamentações marítimas e satisfação total dos clientes atendidos.", "color": "text-maritime-teal" }
   ],
   "cta": {
     "title": "Faça Parte dos Nossos Resultados",
-    "subtitle": "Junte-se aos mais de 1.200 navios que confiaram em nossos serviços durante 2025. Seja o próximo a experimentar nossa excelência.",
+    "subtitle": "Junte-se aos mais de 1.200 navios que confiaram em nossos serviços durante 2024. Seja o próximo a experimentar nossa excelência.",
     "button": "Solicite Nossos Serviços"
   }
 }

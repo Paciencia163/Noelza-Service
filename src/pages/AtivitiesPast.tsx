@@ -55,7 +55,7 @@ interface CTA {
   button: string;
 }
 
-const Activities = () => {
+const ActivitiesPast = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -63,11 +63,11 @@ const Activities = () => {
     navigate("/contato#form-id");
   };
 
-  const stats2025 = t("activities.stats2025", { returnObjects: true }) as Stat[];
-  const serviceTypes = t("activities.serviceTypes", { returnObjects: true }) as ServiceType[];
-  const monthlyData = t("activities.performance.monthlyData", { returnObjects: true }) as MonthlyData[];
-  const highlights = t("activities.highlights", { returnObjects: true }) as Highlight[];
-  const cta = t("activities.cta", { returnObjects: true }) as CTA;
+  const stats2024 = t("activitiespast.stats2024", { returnObjects: true }) as Stat[];
+  const serviceTypes = t("activitiespast.serviceTypes", { returnObjects: true }) as ServiceType[];
+  const monthlyData = t("activitiespast.performance.monthlyData", { returnObjects: true }) as MonthlyData[];
+  const highlights = t("activitiespast.highlights", { returnObjects: true }) as Highlight[];
+  const cta = t("activitiespast.cta", { returnObjects: true }) as CTA;
 
   return (
     <div className="min-h-screen">
@@ -82,26 +82,26 @@ const Activities = () => {
       >
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            {t("activities.hero.title")}
+            {t("activitiespast.hero.title")}
           </h1>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            {t("activities.hero.subtitle")}
+            {t("activitiespast.hero.subtitle")}
           </p>
         </div>
       </section>
 
-      {/* 2025 Statistics - AGORA COM ANIMAÇÃO */}
+      {/* 2024 Statistics - AGORA COM ANIMAÇÃO */}
       <section className="section-maritime bg-maritime-gray/20">
         <div className="container mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold text-primary mb-4">
-            {t("activities.statsTitle")}
+            {t("activitiespast.statsTitle")}
           </h2>
           <p className="text-lg text-muted-foreground">
-            {t("activities.statsSubtitle")}
+            {t("activitiespast.statsSubtitle")}
           </p>
         </div>
         <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {stats2025.map((stat, index) => {
+          {stats2024.map((stat, index) => {
             const Icon = iconMap[stat.icon];
             return (
               <AnimatedStatCard
@@ -117,28 +117,15 @@ const Activities = () => {
         </div>
       </section>
 
-      {/* <a href="/atividades-passadas" className="block text-center mt-8 text-primary hover:underline">
-        Ver Atividades Passadas
-      </a> */}
-      <div className="text-center mt-12">
-        <Button asChild className="btn-maritime">
-          <Link className="text-2xl" to="/atividades-passadas">
-            {t("activities.buttonActivitiesPast")}
-            {/* Ver Atividades Passadas */}
-            <ArrowRight className="ml-2 w-4 h-4" />
-          </Link>
-        </Button>
-      </div>
-
       {/* Service Breakdown */}
       <section className="section-maritime">
         <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold text-primary mb-6">
-              {t("activities.services.title")}
+              {t("activitiespast.services.title")}
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              {t("activities.services.description")}
+              {t("activitiespast.services.description")}
             </p>
             <div className="space-y-4">
               {serviceTypes.map((item, index) => (
@@ -149,7 +136,7 @@ const Activities = () => {
                   <div className="flex-1">
                     <h4 className="font-semibold text-primary">{item.service}</h4>
                     <p className="text-sm text-muted-foreground">
-                      {item.count} {t("activities.services.operations")}
+                      {item.count} {t("activitiespast.services.operations")}
                     </p>
                   </div>
                 </div>
@@ -160,22 +147,22 @@ const Activities = () => {
             <CardContent className="p-8 text-center">
               <BarChart3 className="w-16 h-16 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-primary mb-4">
-                {t("activities.services.cardTitle")}
+                {t("activitiespast.services.cardTitle")}
               </h3>
               <p className="text-muted-foreground mb-6">
-                {t("activities.services.cardDescription")}
+                {t("activitiespast.services.cardDescription")}
               </p>
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="p-4 bg-primary/10 rounded-lg">
                   <div className="text-2xl font-bold text-primary">5</div>
                   <p className="text-sm text-muted-foreground">
-                    {t("activities.services.cardStats.types")}
+                    {t("activitiespast.services.cardStats.types")}
                   </p>
                 </div>
                 <div className="p-4 bg-accent/10 rounded-lg">
                   <div className="text-2xl font-bold text-accent">24/7</div>
                   <p className="text-sm text-muted-foreground">
-                    {t("activities.services.cardStats.availability")}
+                    {t("activitiespast.services.cardStats.availability")}
                   </p>
                 </div>
               </div>
@@ -188,10 +175,10 @@ const Activities = () => {
       <section className="section-maritime bg-maritime-gray/20">
         <div className="container mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold text-primary mb-4">
-            {t("activities.performance.title")}
+            {t("activitiespast.performance.title")}
           </h2>
           <p className="text-lg text-muted-foreground">
-            {t("activities.performance.subtitle")}
+            {t("activitiespast.performance.subtitle")}
           </p>
         </div>
         <div className="container mx-auto grid lg:grid-cols-2 gap-12">
@@ -199,7 +186,7 @@ const Activities = () => {
             <Card key={index} className="card-maritime">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-primary mb-6 text-center">
-                  {t(`activities.performance.${type}Title`)}
+                  {t(`activitiespast.performance.${type}Title`)}
                 </h3>
                 <div className="space-y-3">
                   {monthlyData.map((data, idx) => (
@@ -237,10 +224,10 @@ const Activities = () => {
       <section className="section-maritime">
         <div className="container mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold text-primary mb-4">
-            {t("activities.highlightsTitle")}
+            {t("activitiespast.highlightsTitle")}
           </h2>
           <p className="text-lg text-muted-foreground">
-            {t("activities.highlightsSubtitle")}
+            {t("activitiespast.highlightsSubtitle")}
           </p>
         </div>
         <div className="container mx-auto grid md:grid-cols-3 gap-8">
@@ -282,7 +269,7 @@ const Activities = () => {
   );
 };
 
-export default Activities;
+export default ActivitiesPast;
 
 /* 🔢 Componente interno para animar os números */
 function AnimatedStatCard({
