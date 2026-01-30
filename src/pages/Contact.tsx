@@ -448,7 +448,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         {/* Botão abrir no Google Maps */}
 <div className="space-y-3">
   <p className="text-sm text-muted-foreground mb-2 font-semibold">
-    Selecione qual escritório visualizar:
+    Selecione qual escritório visualizar no mapa completo:
   </p>
   
   {offices.map((office, idx) => (
