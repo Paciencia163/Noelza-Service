@@ -1,0 +1,28 @@
+{
+  "company": {
+    "name": "Noelza Service",
+    "tagline": "Maritime Solutions",
+    "description": "Specialized in Ship Agency and Freight Forward, providing professional solutions since 2018."
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "about": "About Us",
+    "services": "Services",
+    "activities": "Activities",
+    "clients": "Clients"
+  },
+  "services": {
+    "title": "Services",
+    "agency": "Ship Agency",
+    "forward": "Freight Forward",
+    "licensing": "Licensing",
+    "consulting": "Maritime Consulting"
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "geral@noelzaservice.ao",
+    "phone": "+244 925 878 218",
+    "address": "Luanda, Angola"
+  },
+  "copyright": "© 2025 Noelza Service. All rights reserved."
+}

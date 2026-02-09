@@ -1,0 +1,31 @@
+{
+  "hero.title": "Professional Maritime Solutions",
+  "hero.subtitle": "Specialists in Ship Agency and Freight Forward since 2018",
+  "hero.ctaServices": "Discover Our Services",
+  "hero.ctaContact": "Contact Us",
+
+  "stats.shipsServed": "Ships Served (2026)",
+  "stats.inClearance": "Ships in Clearance",
+  "stats.crewAssisted": "Crew Assisted",
+  "stats.yearsExperience": "Years of Experience",
+
+  "about.title": "About Noelza Service",
+  "about.description": "Founded on February 14, 2018, Noelza Service is a company specialized in maritime solutions, offering ship agency and freight forwarding services with excellence and professionalism.",
+  "about.mission.title": "Our Mission",
+  "about.mission.text": "Solve all legal procedures required between the stakeholders, providing convenience and efficiency to clients.",
+  "about.vision.title": "Our Vision",
+  "about.vision.text": "Establish strong and persistent partnerships in the shipping sector.",
+  "about.more": "Learn More About Us",
+
+  "features.agency.title": "Ship Agency",
+  "features.agency.text": "Compliance with all legal procedures from arrival to full clearance.",
+  "features.forward.title": "Freight Forward",
+  "features.forward.text": "Complete consultancy in transport and international documentation.",
+  "features.licensing.title": "Licensing",
+  "features.licensing.text": "Specialized management of berthing, shipping and legal restrictions.",
+  "features.viewAll": "See All Services",
+
+  "cta.title": "Ready to Get Started?",
+  "cta.text": "Contact us and discover how we can facilitate your maritime operations with professional and efficient solutions.",
+  "cta.button": "Contact Us Now"
+}
