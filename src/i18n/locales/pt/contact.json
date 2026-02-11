@@ -86,7 +86,7 @@
     "main": "Escritório Principal",
     "operations": "Escritório de Operações",
     "viewMapButton": "Ver Mapa Completo",
-     "mapDescription": "Selecione qual escritório visualizar no mapa completo",
+     "mapDescription": "Selecione qual escritório visualizar no mapa completo"
   },
   "faq": {
     "title": "Perguntas Frequentes",
