@@ -73,7 +73,7 @@
     "description": "Visite nosso escritório em Luanda para uma reunião presencial",
     "addressTitle": "Endereço",
     "addressLabel": "Endereço Principal",
-    "addressLabel2": "Endereço 2",
+    "addressLabel2": "Escritório de Operações ",
     "address": "Av.21 de Janeiro, Complexo Horizonte Morro Bento, Bloco A, 2º Andar, Morro Bento, Samba - Luanda",
     "address2": "Operações Sonils",
     "hoursLabel": "Horário de Funcionamento",
@@ -85,7 +85,8 @@
     "mapPlaceholder": "Mapa interativo será integrado aqui",
     "main": "Escritório Principal",
     "operations": "Escritório de Operações",
-    "viewMapButton": "Ver Mapa Completo"
+    "viewMapButton": "Ver Mapa Completo",
+     "mapDescription": "Selecione qual escritório visualizar no mapa completo",
   },
   "faq": {
     "title": "Perguntas Frequentes",
@@ -115,7 +116,6 @@
     "requestQuote": "Solicitar Orçamento",
     "scheduleMeeting": "Agendar Reunião"
   },
-  "mapDescription": "Selecione qual escritório visualizar no mapa completo",
 }
 
 
