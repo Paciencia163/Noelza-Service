@@ -413,6 +413,10 @@ const handleSubmit = async (e: React.FormEvent) => {
                       <p className="text-muted-foreground">{t("contact.office.address")}</p>
                     </div>
                     <div>
+                      <p className="font-semibold text-primary">{t("contact.office.addressLabel2")}:</p>
+                      <p className="text-muted-foreground">{t("contact.office.address2")}</p>
+                    </div>
+                    <div>
                       <p className="font-semibold text-primary">{t("contact.office.hoursLabel")}:</p>
                       <p className="text-muted-foreground">{t("contact.office.hours")}</p>
                       <p className="text-muted-foreground">{t("contact.office.sunday")}</p>
