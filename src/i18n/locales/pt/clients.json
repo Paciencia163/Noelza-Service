@@ -1,0 +1,184 @@
+{
+  "hero": {
+    "title": "Clientes e Parceiros",
+    "subtitle": "Construímos relacionamentos sólidos com empresas líderes do setor marítimo, baseados na confiança, excelência e resultados consistentes"
+  },
+    "mainClientsHeader": {
+      "mainClientsTitle": "Clientes e Parceiros",
+      "mainClientsDescription": "Empresas que confiam em nossa experiência marítima"
+  },
+   "mainClientsNewHeader": {
+      "mainClientsTitle": "Principais Clientes",
+      "mainClientsDescription": "Todos os nossos clientes confiam na Noelza Service para serviços especializados de Agenciamento de Navios, Freight Forward e Licenciamento de Navios. Desde 2018, fortalecemos parcerias sólidas que refletem nosso compromisso com a excelência e a eficiência no setor marítimo angolano."
+  },
+  "mainClients": [
+    {
+      "name": "Chouest INN Angola",
+      "src": "chouest-logo.png",
+      "alt": "Logo Chouest INN Angola",
+      "description": "Líder em soluções marítimas integradas em Angola",
+      "sector": "Soluções Marítimas",
+      "partnership": "2018",
+      "services": ["Licenciamento", "Gestão de Tripulação"],
+      "relation": "Cliente-Parceiro"
+    },
+    {
+      "name": "INN Offshore",
+      "src": "inn-offshore-logo.png",
+      "alt": "Logo INN Offshore",
+      "description": "Parceiro estratégico em operações offshore e marítimas",
+      "sector": "Offshore & Marítimo",
+      "partnership": "2022-presente",
+      "services": ["Licenciamento", "Agenciamento de Navios", "Gestão de Tripulação", "Freight Forward", "Consultoria Marítima", "Operações Portuárias"],
+      "relation": "Cliente-Parceiro"
+    },
+    {
+      "name": "SONILS",
+      "src": "sonils-logo.png",
+      "alt": "Logo SONILS",
+      "description": "Empresa nacional de serviços integrados de logística",
+      "sector": "Logística Integrada",
+      "partnership": "2024-presente",
+      "services": ["Consultoria Marítima"],
+      "relation": "Parceiro"
+    }
+  ],
+  "mainClientsNew": [
+    {
+      "name": "Sonangol",
+      "src": "sonangol-logo.png",
+      "alt": "Logo Sonangol",
+      "description": "Líder em soluções marítimas integradas em Angola",
+      "sector": "Soluções Marítimas",
+      "partnership": "2018",
+      "services": ["Licenciamento", "Gestão de Tripulação", "Operações Portuárias"],
+      "relation": "Cliente-Parceiro"
+    },
+    {
+      "name": "Azule Energy",
+      "src": "azule-energy-logo.png",
+      "alt": "Logo Azule Energy",
+      "description": "Parceiro estratégico em operações offshore e marítimas",
+      "sector": "Offshore & Marítimo",
+      "partnership": "2022-presente",
+      "services": ["Agenciamento de Navios", "Freight Forward", "Consultoria Marítima"],
+      "relation": "Cliente-Parceiro"
+    },
+    {
+      "name": "Esso Angola",
+      "src": "esso-angola-logo.png",
+      "alt": "Logo Esso Angola",
+      "description": "Empresa nacional de serviços integrados de logística",
+      "sector": "Logística Integrada",
+      "partnership": "2024-presente",
+      "services": ["Freight Forward", "Consultoria", "Compliance Marítimo"],
+      "relation": "Parceiro"
+    },
+    {
+      "name": "Seabulk Offshore Angola, Lda",
+      "src": "scabulk-logo.png",
+      "alt": "Logo Seabulk Offshore",
+      "description": "Empresa nacional de serviços integrados de logística",
+      "sector": "Logística Integrada",
+      "partnership": "2024-presente",
+      "services": ["Freight Forward", "Consultoria", "Compliance Marítimo"],
+      "relation": "Parceiro"
+    },
+    {
+      "name": "SonaSurf",
+      "src": "sonasurf-logo.png",
+      "alt": "Logo SonaSurf",
+      "description": "Empresa nacional de serviços integrados de logística",
+      "sector": "Logística Integrada",
+      "partnership": "2024-presente",
+      "services": ["Freight Forward", "Consultoria", "Compliance Marítimo"],
+      "relation": "Parceiro"
+    }
+  ],
+  "clientType": {
+    "clientTypesTitle": "Tipos de Clientes",
+    "clientTypesDescription": "Diversidade de empresas que atendemos no sector marítimo"
+  },
+  "clientTypes": [
+    {
+      "icon": "Building2",
+      "title": "Empresas Offshore",
+      "count": "12+",
+      "description": "Companhias especializadas em operações marítimas offshore"
+    },
+    {
+      "icon": "Globe",
+      "title": "Operadores Internacionais",
+      "count": "8+",
+      "description": "Empresas multinacionais com operações em Angola"
+    },
+    {
+      "icon": "Users",
+      "title": "Armadores Locais",
+      "count": "15+",
+      "description": "Proprietários e operadores de embarcações nacionais"
+    },
+    {
+      "icon": "Award",
+      "title": "Parcerias Estratégicas",
+      "count": "5+",
+      "description": "Parcerias de longo prazo com empresas do setor"
+    }
+  ],
+    "testimonial": {
+    "testimonialsTitle": "O Que Dizem Nossos Clientes",
+    "testimonialsDescription": "Depoimentos que refletem nossa dedicação e qualidade"
+  },
+  "testimonials": [
+    {
+      "quote": "Eficiência, confiabilidade e conhecimento técnico excepcional. Recomendamos seus serviços sem hesitação.",
+      "author": "Gerente Marítimo",
+      "company": "Chouest INN Angola"
+    },
+    {
+      "quote": "A Noelza Service tem sido fundamental para o sucesso das nossas operações marítimas em Angola. Profissionalismo exemplar.",
+      "author": "Diretor de Operações",
+      "company": "INN Offshore"
+    },
+    {
+      "quote": "Parceria sólida que nos permite focar no nosso core business enquanto a Noelza cuida de toda a parte marítima.",
+      "author": "Director de operações",
+      "company": "SONILS"
+    }
+  ],
+  "benefits": [
+    {
+      "key": "handshake",
+      "title": "Relacionamento de Confiança",
+      "description": "Construímos parcerias duradouras baseadas na transparência e resultados"
+    },
+    {
+      "key": "award",
+      "title": "Excelência Comprovada",
+      "description": "Histórico consistente de sucesso e satisfação total dos clientes"
+    },
+    {
+      "key": "globe",
+      "title": "Conhecimento Local",
+      "description": "Experiência profunda do mercado angolano e regulamentações locais"
+    },
+    {
+      "key": "users",
+      "title": "Equipe Especializada",
+      "description": "Profissionais altamente qualificados e dedicados ao seu sucesso"
+    }
+  ],
+   "partner": {
+    "partnershipCardTitle": "Seja Nosso Parceiro",
+    "partnershipCardDescription": "Junte-se às empresas líderes que já confiam na Noelza Service para suas operações marítimas em Angola.",
+    "activeClients": "Clientes Ativos",
+    "satisfaction": "Satisfação",
+    "becomeClient": "Torne-se Cliente"
+  },
+  "cta": {
+    "title": "Pronto para Uma Nova Parceria?",
+    "subtitle": "Descubra como a Noelza Service pode otimizar suas operações marítimas e se tornar seu parceiro estratégico de confiança.",
+    "button": "Iniciar Parceria"
+  }
+}
+

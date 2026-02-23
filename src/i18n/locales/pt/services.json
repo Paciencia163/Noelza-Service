@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "Nossos Serviços",
+    "subtitle": "Oferecemos soluções completas e profissionais para o setor marítimo, com foco na excelência operacional e satisfação do cliente"
+  },
+  "mainServicesCardTitle": "Serviço Especializado",
+  "mainServicesCardDescription": "Contamos com uma equipe altamente qualificada e experiente para atender todas as suas necessidades com máxima eficiência.",
+  "mainServices": [
+    { 
+      "icon": "Ship",
+      "title": "Agenciamento de Navios",
+      "description": "Serviços completos de agenciamento marítimo",
+      "features": [
+        "Cumprimento de trâmites legais desde chegada até liberação da carga e tripulação",
+        "Comunicação entre embarcações e portos",
+        "Assessoria de mercados portuários",
+        "Coordenação com autoridades marítimas",
+        "Gestão de documentação naval"
+      ]
+    },
+    {
+      "icon": "Container",
+      "title": "Desalfandegamento de Cargas",
+      "description": "Soluções completas em logística internacional",
+      "features": [
+        "Auxílio na escolha de transporte mais adequado",
+        "Consultoria sobre normas tributárias e alfandegárias",
+        "Emissão e organização de documentação",
+        "Consolidação e liberação de cargas",
+        "Rastreamento de cargas em tempo real"
+      ]
+    },
+    {
+      "icon": "Anchor",
+      "title": "Licenciamento de Navios",
+      "description": "Gestão especializada em licenciamento marítimo",
+      "features": [
+        "Gestão de atracagem e embarque/desembarque de tripulantes",
+        "Análise de restrições legais",
+        "Coordenação com autoridades portuárias",
+        "Documentação para licenciamento",
+        "Acompanhamento de processos"
+      ]
+    }
+  ],
+  "additionalServicesTitle": "Serviços Complementares",
+  "additionalServicesDescription": "Serviços adicionais para completar suas necessidades marítimas",
+  "additionalServices": [
+    { "icon": "FileText", "title": "Consultoria Marítima", "description": "Consultoria especializada em regulamentação marítima e portuária" },
+    { "icon": "Users", "title": "Gestão de Tripulação", "description": "Assistência completa para tripulantes e gestão de recursos humanos navais" },
+    { "icon": "Shield", "title": "Compliance Marítimo", "description": "Garantia de conformidade com regulamentações nacionais e internacionais" },
+    { "icon": "Globe", "title": "Operações Internacionais", "description": "Coordenação de operações marítimas em águas internacionais" }
+  ],
+  "process": {
+    "title": "Nosso Processo",
+    "subtitle": "Como trabalhamos para garantir a melhor experiência",
+    "steps": [
+      { "step": "01", "title": "Análise", "desc": "Avaliação detalhada das necessidades" },
+      { "step": "02", "title": "Planejamento", "desc": "Estratégia personalizada para cada caso" },
+      { "step": "03", "title": "Execução", "desc": "Implementação eficiente dos serviços" },
+      { "step": "04", "title": "Acompanhamento", "desc": "Suporte contínuo e monitoramento" }
+    ]
+  },
+  "cta": {
+    "title": "Precisa dos Nossos Serviços?",
+    "subtitle": "Entre em contato conosco para uma consulta personalizada e descubra como podemos otimizar suas operações marítimas.",
+    "buttons": [
+      { "label": "Solicitar Orçamento" },
+      { "label": "Fale Conosco" }
+    ]
+  }
+}

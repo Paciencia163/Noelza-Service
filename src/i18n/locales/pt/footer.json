@@ -1,0 +1,28 @@
+{
+  "company": {
+    "name": "Noelza Service",
+    "tagline": "Soluções Marítimas",
+    "description": "Especializada em Agenciamento de Navegação Marítima e Desalfandegamento de Cargas, oferecendo soluções profissionais desde 2018."
+  },
+  "quickLinks": {
+    "title": "Links Rápidos",
+    "about": "Sobre Nós",
+    "services": "Serviços",
+    "activities": "Atividades",
+    "clients": "Clientes"
+  },
+  "services": {
+    "title": "Serviços",
+    "agency": "Agenciamento de Navios",
+    "forward": "Desalfandegamento de Cargas",
+    "licensing": "Licenciamento",
+    "consulting": "Consultoria Marítima"
+  },
+  "contact": {
+    "title": "Contacto",
+    "email": "geral@noelzaservice.ao",
+    "phone": "+244 925 878 218",
+    "address": "Luanda, Angola"
+  },
+  "copyright": "© 2025 Noelza Service. Todos os direitos reservados."
+}

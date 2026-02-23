@@ -1,0 +1,31 @@
+{
+  "hero.title": "Soluções Marítimas Profissionais",
+  "hero.subtitle": "Especialistas em Agenciamento de Navegação e Desalfandegamento de Cargas desde 2018",
+  "hero.ctaServices": "Conheça Nossos Serviços",
+  "hero.ctaContact": "Fale Conosco",
+
+  "stats.shipsServed": "Navios Sob Agenciamento (2026)",
+  "stats.inClearance": "Navios em Escala",
+  "stats.crewAssisted": "Tripulantes Assistidos",
+  "stats.yearsExperience": "Anos de Experiência",
+
+  "about.title": "Sobre a Noelza Service",
+  "about.description": "Fundada em 14 de fevereiro de 2018, a Noelza Service é uma empresa especializada em soluções marítimas, oferecendo serviços de agenciamento de navegação e desalfandegamento de cargas com excelência e profissionalismo.",
+  "about.mission.title": "Nossa Missão",
+  "about.mission.text": "Solucionar todos os trâmites legais exigidos entre os intervenientes do sector, dando comodidade e eficiência aos clientes.",
+  "about.vision.title": "Nossa Visão",
+  "about.vision.text": "Estabelecer parcerias fortes e perseverantes no sector de shipping.",
+  "about.more": "Saiba Mais Sobre Nós",
+
+  "features.agency.title": "Agenciamento de Navios",
+  "features.agency.text": "Cumprimento de todos os trâmites legais desde a chegada até a liberação completa.",
+  "features.forward.title": "Desalfandegamento de Cargas",
+  "features.forward.text": "Consultoria completa em transporte e documentação internacional.",
+  "features.licensing.title": "Licenciamento",
+  "features.licensing.text": "Gestão especializada de atracagem, embarque e restrições legais.",
+  "features.viewAll": "Ver Todos os Serviços",
+
+  "cta.title": "Pronto para Começar?",
+  "cta.text": "Entre em contacto conosco e descubra como podemos facilitar as suas operações marítimas com soluções profissionais e eficientes.",
+  "cta.button": "Fale Conosco Agora"
+}

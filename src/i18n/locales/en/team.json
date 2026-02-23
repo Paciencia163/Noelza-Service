@@ -1,0 +1,154 @@
+{
+"hero": {
+"title": "Our Team",
+"subtitle": "Dedicated, multidisciplinary, and efficient professionals committed to excellence in the Angolan maritime sector"
+},
+"leadership": {
+"title": "Executive Leadership",
+"subtitle": "Experienced and visionary leadership guiding our company",
+"experience": "Experience",
+"specialization": "Specialization",
+"members": [
+{
+"name": "Alexandre Sousa",
+"src": "alexandre.png",
+"alt": "General Director - Alexandre Sousa",
+"position": "General Director",
+"description": "Leads the company's strategy and growth.",
+"experience": "15+ years",
+"specialization": "Corporate Management"
+},
+{
+"name": "Viana Dos Santos",
+"src": "viana.png",
+"alt": "Technical Director - Viana Dos Santos",
+"position": "Technical Director",
+"description": "Ensures quality and efficiency of technical operations.",
+"experience": "20+ years",
+"specialization": "Technical Management"
+},
+{
+"name": "Wilson Agostinho",
+"src": "wilson.png",
+"alt": "Financial Manager - Wilson Agostinho",
+"position": "Financial Manager",
+"description": "Manages company resources and financial planning.",
+"experience": "20+ years",
+"specialization": "Finance & Strategy"
+}
+]
+},
+"departments": {
+"title": "Organizational Structure",
+"subtitle": "Specialized departments working in synergy",
+"responsibilities": "Responsibilities",
+"items": [
+{
+"key": "briefcase",
+"name": "Maritime Operations",
+"members": "8 professionals",
+"description": "Management of ship agency, clearance, and port operations",
+"responsibilities": [
+"Ship agency",
+"Clearance management",
+"Port coordination",
+"Maritime documentation"
+]
+},
+{
+"key": "users",
+"name": "Freight Forward",
+"members": "3 professionals",
+"description": "Specialists in international logistics and cargo consolidation",
+"responsibilities": [
+"Transport consultancy",
+"Document management",
+"Cargo consolidation",
+"Customs compliance"
+]
+},
+{
+"key": "award",
+"name": "Maritime Consulting",
+"members": "2 professionals",
+"description": "Consultants specialized in regulation and compliance",
+"responsibilities": [
+"Regulatory consultancy",
+"Compliance analysis",
+"Technical advisory",
+"License management"
+]
+},
+{
+"key": "target",
+"name": "Customer Service",
+"members": "5 professionals",
+"description": "Team dedicated to client support and relationship management",
+"responsibilities": [
+"24/7 support",
+"Relationship management",
+"Technical support",
+"Service coordination"
+]
+}
+]
+},
+"stats": {
+"title": "Our Workforce",
+"description": "Numbers reflecting our capacity and dedication",
+"items": [
+{ "value": "23+", "label": "Professionals" },
+{ "value": "4", "label": "Departments" },
+{ "value": "12+", "label": "Average Years of Experience" },
+{ "value": "24/7", "label": "Availability" }
+]
+},
+"values": {
+"title": "Team Values",
+"subtitle": "Principles guiding our multidisciplinary team",
+"items": [
+{
+"key": "GraduationCap",
+"title": "Continuous Training",
+"description": "We constantly invest in the training of our team"
+},
+{
+"key": "award",
+"title": "Professional Excellence",
+"description": "Commitment to the highest quality standards"
+},
+{
+"key": "users",
+"title": "Teamwork",
+"description": "Collaboration and synergy for exceptional results"
+}
+]
+},
+"join": {
+"title": "Join Our Team",
+"description": "We are always looking for talented and dedicated professionals to strengthen our multidisciplinary team. If you are passionate about the maritime sector and seek professional growth, we want to meet you.",
+"benefits": [
+"Collaborative work environment",
+"Growth opportunities",
+"Continuous training",
+"Challenging projects"
+],
+"workWithUs": {
+"title": "Work With Us",
+"description": "Send your CV and be part of a team transforming the maritime sector in Angola.",
+"areasTitle": "Areas of Interest:",
+"areasOfInterest": [
+"Maritime Operations",
+"Freight Forward",
+"Consulting",
+"Customer Service"
+],
+"button": "Send CV"
+}
+},
+"cta": {
+"title": "Meet Our Team in Person",
+"subtitle": "Schedule a meeting and discover how our multidisciplinary team can contribute to the success of your maritime operations.",
+"button": "Schedule Meeting"
+}
+}

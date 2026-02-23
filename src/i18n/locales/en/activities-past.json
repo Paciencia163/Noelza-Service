@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "title": "Past Activities",
+    "titleAtivitiesPast": "Past Activities",
+    "subtitle": "Exceptional results in 2024 demonstrate our competence and dedication in the Angolan maritime sector"
+  },
+  "statsTitle": "2024 Results ",
+  "statsTitle2024": "2024 Results",
+  "statsSubtitle": "Numbers reflecting our operational excellence",
+
+  "stats2024": [
+    { "number": "+216", "label": "Ships Served", "icon": "Ship", "color": "text-primary" },
+    { "number": "+1,269", "label": "Ships in Clearance", "icon": "FileCheck", "color": "text-accent" },
+    { "number": "20,979", "label": "Crew Assisted", "icon": "Users", "color": "text-maritime-teal" },
+    { "number": "100%", "label": "Satisfaction Rate", "icon": "TrendingUp", "color": "text-maritime-gold" }
+  ],
+  "services": {
+    "title": "Types of Services Provided",
+    "description": "Distribution of our services throughout 2024, demonstrating our versatility and service capacity.",
+    "operations": "operations",
+    "cardTitle": "Service Diversification",
+    "cardDescription": "Our wide range of services allows us to meet the most diverse needs of the maritime sector.",
+    "cardStats": {
+      "types": "Service Types",
+      "availability": "Availability"
+    }
+  },
+  "serviceTypes": [
+    { "service": "Crew Departure/Arrival", "count": "20,974" },
+    { "service": "Monthly Agency Fee", "count": "216" },
+    { "service": "Birthing Fee", "count": "193" },
+    { "service": "Port Clearance", "count": "1,384" },
+    { "service": "Other Services", "count": "44" }
+  ],
+  "performance": {
+    "title": "Monthly Performance 2024",
+    "subtitle": "Consistent progress throughout the year",
+    "shipsTitle": "Ships Served per Month",
+    "crewTitle": "Crew Assisted per Month",
+     "monthlyData": [
+      { "month": "Jan", "ships": 98, "crew": 1654 },
+      { "month": "Feb", "ships": 105, "crew": 1789 },
+      { "month": "Mar", "ships": 112, "crew": 1923 },
+      { "month": "Apr", "ships": 108, "crew": 1845 },
+      { "month": "May", "ships": 115, "crew": 1967 },
+      { "month": "Jun", "ships": 109, "crew": 1876 },
+      { "month": "Jul", "ships": 118, "crew": 2034 },
+      { "month": "Aug", "ships": 106, "crew": 1798 },
+      { "month": "Sep", "ships": 113, "crew": 1934 },
+      { "month": "Oct", "ships": 102, "crew": 1745 },
+      { "month": "Nov", "ships": 97, "crew": 1632 },
+      { "month": "Dec", "ships": 86, "crew": 1477 }
+    ]
+  },
+  "highlightsTitle": "Experience Highlights",
+  "highlightsSubtitle": "Key milestones demonstrating our competence",
+  "highlights": [
+    { "icon": "Calendar", "title": "Continuous Operation", "description": "Uninterrupted service throughout 2024, ensuring 24/7 support for our clients.", "color": "text-primary" },
+    { "icon": "TrendingUp", "title": "Consistent Growth", "description": "Sustainable growth in operations volume and service diversification throughout the year.", "color": "text-accent" },
+    { "icon": "FileCheck", "title": "Operational Excellence", "description": "100% compliance with maritime regulations and full client satisfaction.", "color": "text-maritime-teal" }
+  ],
+  "cta": {
+    "title": "Join Our Results",
+    "subtitle": "Join over 1,200 ships that trusted our services in 2024. Be the next to experience our excellence.",
+    "button": "Request Our Services"
+  }
+}

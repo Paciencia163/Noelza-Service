@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "title": "Actividades e Experiência",
+    "subtitle": "Resultados excepcionais em 2025 demonstram nossa competência e dedicação no setor marítimo angolano"
+  },
+  "statsTitle": "Resultados de 2025",
+  "statsTitle2025": "Resultados de 2025",
+  "statsSubtitle": "Números que refletem nossa excelência operacional",
+
+  "stats2025": [
+    { "number": "317", "label": "Navios Sob Agenciamento", "icon": "Ship", "color": "text-primary" },
+    { "number": "2.244", "label": "Navios em Escala", "icon": "FileCheck", "color": "text-accent" },
+    { "number": "35.249", "label": "Tripulantes Assistidos", "icon": "Users", "color": "text-maritime-teal" },
+    { "number": "100%", "label": "Taxa de Satisfação", "icon": "TrendingUp", "color": "text-maritime-gold" }
+  ],
+  "buttonActivitiesPast": "Ver Actividades Passadas",
+  "services": {
+    "title": "Tipos de Serviços Prestados",
+    "description": "Distribuição dos nossos serviços ao longo de 2025, demonstrando nossa versatilidade e capacidade de atendimento.",
+    "operations": "operações",
+    "cardTitle": "Diversificação de Serviços",
+    "cardDescription": "Nossa ampla gama de serviços permite atender às mais diversas necessidades do sector marítimo.",
+    "cardStats": {
+      "types": "Tipos de Serviços",
+      "availability": "Atendimento"
+    },
+    "numberTypes": "4"
+  },
+  "serviceTypes": [
+    { "service": "Assistência atripulantes offshore e onshore", "count": "20,974" },
+    { "service": "Navios sobre agenciamento", "count": "216" },
+    { "service": "Navios em Escala", "count": "1,384" },
+    { "service": "Outros Serviços", "count": "44" }
+  ],
+  
+  "performance": {
+    "title": "Performance Mensal 2025",
+    "subtitle": "Evolução consistente ao longo do ano",
+    "shipsTitle": "Navios Sob Agenciamento por Mês",
+    "crewTitle": "Tripulantes Assistidos por Mês",
+     "monthlyData": [
+      { "month": "Jan", "ships": 23, "crew": 3113 },
+      { "month": "Fev", "ships": 24, "crew": 3301 },
+      { "month": "Mar", "ships": 23, "crew": 2820 },
+      { "month": "Abr", "ships": 28, "crew": 2820 },
+      { "month": "Mai", "ships": 20, "crew": 2863 },
+      { "month": "Jun", "ships": 26, "crew": 3048 },
+      { "month": "Jul", "ships": 28, "crew": 3036 },
+      { "month": "Ago", "ships": 27, "crew": 2793 },
+      { "month": "Set", "ships": 33, "crew": 3537 },
+      { "month": "Out", "ships": 30, "crew": 3197 },
+      { "month": "Nov", "ships": 27, "crew": 3648 },
+      { "month": "Dez", "ships": 28, "crew": 3893 }
+    ]
+  },
+  "highlightsTitle": "Destaques da Nossa Experiência",
+  "highlightsSubtitle": "Marcos importantes que demonstram nossa competência",
+  "highlights": [
+    { "icon": "Calendar", "title": "Operação Contínua", "description": "Atendimento ininterrupto durante todo o ano de 2025, garantindo suporte 24/7 para nossos clientes.", "color": "text-primary" },
+    { "icon": "TrendingUp", "title": "Crescimento Consistente", "description": "Crescimento sustentável em volume de operações e diversificação de serviços ao longo do ano.", "color": "text-accent" },
+    { "icon": "FileCheck", "title": "Excelência Operacional", "description": "100% de conformidade com regulamentações marítimas e satisfação total dos clientes atendidos.", "color": "text-maritime-teal" }
+  ],
+  "cta": {
+    "title": "Faça Parte dos Nossos Resultados",
+    "subtitle": "Junte-se aos mais de 2000 navios que confiaram em nossos serviços durante 2025. Seja o próximo a experimentar nossa excelência.",
+    "button": "Solicite Nossos Serviços"
+  }
+}

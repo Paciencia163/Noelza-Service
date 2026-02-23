@@ -1,0 +1,154 @@
+{
+"hero": {
+"title": "Nossa Equipe",
+"subtitle": "Profissionais dedicados, multidisciplinares e eficientes, comprometidos com a excelência no setor marítimo angolano"
+},
+"leadership": {
+"title": "Direção Executiva",
+"subtitle": "Liderança experiente e visionária guiando nossa empresa",
+"experience": "Experiência",
+"specialization": "Especialização",
+"members": [
+{
+"name": "Alexandre Sousa",
+"src": "alexandre.png",
+"alt": "Diretor Geral - Alexandre Sousa",
+"position": "Diretor Geral",
+"description": "Lidera a estratégia e o crescimento da empresa.",
+"experience": "15+ anos",
+"specialization": "Gestão Corporativa"
+},
+{
+"name": "Viana Dos Santos",
+"src": "viana.png",
+"alt": "Diretor Técnico - Viana Dos Santos",
+"position": "Diretor Técnico",
+"description": "Garante a qualidade e eficiência das operações técnicas.",
+"experience": "20+ anos",
+"specialization": "Gestão Técnica"
+},
+{
+"name": "Wilson Agostinho",
+"src": "wilson.png",
+"alt": "Gestor Financeiro - Wilson Agostinho",
+"position": "Gestor Financeiro",
+"description": "Administra recursos e planeamento financeiro da empresa.",
+"experience": "20+ anos",
+"specialization": "Finanças e Estratégia"
+}
+]
+},
+"departments": {
+"title": "Estrutura Organizacional",
+"subtitle": "Departamentos especializados trabalhando em sinergia",
+"responsibilities": "Responsabilidades",
+"items": [
+{
+"key": "briefcase",
+"name": "Operações Marítimas",
+"members": "8 profissionais",
+"description": "Gestão de agenciamento de navios, clearance e operações portuárias",
+"responsibilities": [
+"Agenciamento de navios",
+"Gestão de clearance",
+"Coordenação portuária",
+"Documentação marítima"
+]
+},
+{
+"key": "users",
+"name": "Desalfandegamento de Cargas",
+"members": "3 profissionais",
+"description": "Especialistas em logística internacional e consolidação de cargas",
+"responsibilities": [
+"Consultoria em transporte",
+"Gestão documental",
+"Consolidação de cargas",
+"Compliance alfandegário"
+]
+},
+{
+"key": "award",
+"name": "Consultoria Marítima",
+"members": "2 profissionais",
+"description": "Consultores especializados em regulamentação e compliance",
+"responsibilities": [
+"Consultoria regulatória",
+"Análise de compliance",
+"Assessoria técnica",
+"Gestão de licenças"
+]
+},
+{
+"key": "target",
+"name": "Atendimento ao Cliente",
+"members": "5 profissionais",
+"description": "Equipe dedicada ao suporte e relacionamento com clientes",
+"responsibilities": [
+"Atendimento 24/7",
+"Gestão de relacionamento",
+"Suporte técnico",
+"Coordenação de serviços"
+]
+}
+]
+},
+"stats": {
+"title": "Nossa Força de Trabalho",
+"description": "Números que refletem nossa capacidade e dedicação",
+"items": [
+{ "value": "23+", "label": "Profissionais" },
+{ "value": "4", "label": "Departamentos" },
+{ "value": "12+", "label": "Anos de Experiência Média" },
+{ "value": "24/7", "label": "Disponibilidade" }
+]
+},
+"values": {
+"title": "Valores da Equipe",
+"subtitle": "Os princípios que guiam nossa equipe multidisciplinar",
+"items": [
+{
+"key": "graduationCap",
+"title": "Formação Contínua",
+"description": "Investimos constantemente na capacitação da nossa equipe"
+},
+{
+"key": "award",
+"title": "Excelência Profissional",
+"description": "Compromisso com os mais altos padrões de qualidade"
+},
+{
+"key": "users",
+"title": "Trabalho em Equipe",
+"description": "Colaboração e sinergia para resultados excepcionais"
+}
+]
+},
+"join": {
+"title": "Junte-se à Nossa Equipe",
+"description": "Estamos sempre em busca de profissionais talentosos e dedicados para fortalecer nossa equipe multidisciplinar. Se você tem paixão pelo setor marítimo e busca crescimento profissional, queremos conhecê-lo.",
+"benefits": [
+"Ambiente de trabalho colaborativo",
+"Oportunidades de crescimento",
+"Formação contínua",
+"Projetos desafiadores"
+],
+"workWithUs": {
+"title": "Trabalhe Conosco",
+"description": "Envie seu currículo e faça parte de uma equipe que está transformando o setor marítimo em Angola.",
+"areasTitle": "Áreas de Interesse:",
+"areasOfInterest": [
+"Operações Marítimas",
+"Desalfandegamento de Cargas",
+"Consultoria",
+"Atendimento"
+],
+"button": "Enviar Currículo"
+}
+},
+"cta": {
+"title": "Conheça Nossa Equipe Pessoalmente",
+"subtitle": "Agende uma reunião e descubra como nossa equipe multidisciplinar pode contribuir para o sucesso das suas operações marítimas.",
+"button": "Agendar Reunião"
+}
+}

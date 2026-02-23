@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "title": "Actividades Passadas",
+    "subtitle": "Resultados excepcionais em 2024 demonstram nossa competência e dedicação no setor marítimo angolano"
+  },
+  "statsTitle": "Resultados de 2024",
+  "statsTitle2024": "Resultados de 2024",
+  "statsSubtitle": "Números que refletem nossa excelência operacional",
+
+  "stats2024": [
+    { "number": "+216", "label": "Navios Atendidos", "icon": "Ship", "color": "text-primary" },
+    { "number": "+1,269", "label": "Navios em Clearency", "icon": "FileCheck", "color": "text-accent" },
+    { "number": "20,979", "label": "Tripulantes Assistidos", "icon": "Users", "color": "text-maritime-teal" },
+    { "number": "100%", "label": "Taxa de Satisfação", "icon": "TrendingUp", "color": "text-maritime-gold" }
+  ],
+  "services": {
+    "title": "Tipos de Serviços Prestados",
+    "description": "Distribuição dos nossos serviços ao longo de 2024, demonstrando nossa versatilidade e capacidade de atendimento.",
+    "operations": "operações",
+    "cardTitle": "Diversificação de Serviços",
+    "cardDescription": "Nossa ampla gama de serviços permite atender às mais diversas necessidades do sector marítimo.",
+    "cardStats": {
+      "types": "Tipos de Serviços",
+      "availability": "Atendimento"
+    }
+  },
+  "serviceTypes": [
+    { "service": "Partida/Chegada da Tripulação", "count": "20,974" },
+    { "service": "Taxa Mensal da Agência", "count": "216" },
+    { "service": "Taxa de Parto", "count": "193" },
+    { "service": "Liberação do Porto", "count": "1,384" },
+    { "service": "Outros Serviços", "count": "44" }
+  ],
+  
+  "performance": {
+    "title": "Performance Mensal 2024",
+    "subtitle": "Evolução consistente ao longo do ano",
+    "shipsTitle": "Navios Atendidos por Mês",
+    "crewTitle": "Tripulantes Assistidos por Mês",
+     "monthlyData": [
+      { "month": "Jan", "ships": 98, "crew": 1654 },
+      { "month": "Fev", "ships": 105, "crew": 1789 },
+      { "month": "Mar", "ships": 112, "crew": 1923 },
+      { "month": "Abr", "ships": 108, "crew": 1845 },
+      { "month": "Mai", "ships": 115, "crew": 1967 },
+      { "month": "Jun", "ships": 109, "crew": 1876 },
+      { "month": "Jul", "ships": 118, "crew": 2034 },
+      { "month": "Ago", "ships": 106, "crew": 1798 },
+      { "month": "Set", "ships": 113, "crew": 1934 },
+      { "month": "Out", "ships": 102, "crew": 1745 },
+      { "month": "Nov", "ships": 97, "crew": 1632 },
+      { "month": "Dez", "ships": 86, "crew": 1477 }
+    ]
+  },
+  "highlightsTitle": "Destaques da Nossa Experiência",
+  "highlightsSubtitle": "Marcos importantes que demonstram nossa competência",
+  "highlights": [
+    { "icon": "Calendar", "title": "Operação Contínua", "description": "Atendimento ininterrupto durante todo o ano de 2024, garantindo suporte 24/7 para nossos clientes.", "color": "text-primary" },
+    { "icon": "TrendingUp", "title": "Crescimento Consistente", "description": "Crescimento sustentável em volume de operações e diversificação de serviços ao longo do ano.", "color": "text-accent" },
+    { "icon": "FileCheck", "title": "Excelência Operacional", "description": "100% de conformidade com regulamentações marítimas e satisfação total dos clientes atendidos.", "color": "text-maritime-teal" }
+  ],
+  "cta": {
+    "title": "Faça Parte dos Nossos Resultados",
+    "subtitle": "Junte-se aos mais de 1.200 navios que confiaram em nossos serviços durante 2024. Seja o próximo a experimentar nossa excelência.",
+    "button": "Solicite Nossos Serviços"
+  }
+}

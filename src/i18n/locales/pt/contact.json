@@ -1,0 +1,121 @@
+
+
+{
+  "hero": {
+    "title": "Entre em Contacto",
+    "description": "Entre em contacto e descubra como podemos facilitar as suas operações marítimas com soluções profissionais e eficientes"
+  },
+  "form": {
+    "sendMessage": "Envie sua Mensagem",
+    "fields": {
+      "name": "Nome Completo *",
+      "email": "Email *",
+      "company": "Empresa",
+      "phone": "Telefone",
+      "service": "Serviço de Interesse",
+      "message": "Mensagem *"
+    },
+    "placeholders": {
+      "name": "Seu nome completo",
+      "email": "seu@email.com",
+      "company": "Nome da empresa",
+      "phone": "+244 XXX XXX XXX",
+      "message": "Descreva suas necessidades ou dúvidas..."
+    },
+    "submit": "Enviar Mensagem",
+    "selectService": "Selecione um serviço",
+    "thankYou": "Entraremos em contato em breve. Obrigado pelo interesse!",
+    "services": [
+      "Agenciamento de Navios",
+      "Freight Forward",
+      "Licenciamento de Navios",
+      "Consultoria Marítima",
+      "Gestão de Tripulação",
+      "Compliance Marítimo",
+      "Outros"
+    ]
+  },
+  "contactInfo": {
+    "title": "Informações de Contacto",
+    "items": [
+      {
+        "key": "email",
+        "title": "Email",
+        "details": "geral@noelzaservice.ao",
+        "description": "Envie-nos um email para consultas gerais"
+    },
+    {
+          "key": "phone",
+          "title": "Telefone",
+          "details": "+244 925 878 218 / +244 929 984 300",
+          "description": "Atendimento comercial de segunda a sexta"
+        },
+        {
+          "key": "location",
+          "title": "Base de Operações",
+          "details": "SONILS"
+        },
+        {
+        "key": "hours",
+        "title": "Horário",
+        "details": "24/7 Operações",
+        "description": "Atendimento de emergência sempre disponível"
+      }
+    ],
+    "emergency": {
+      "title": "Precisa de Atendimento Imediato?",
+      "description": "Para emergências marítimas e situações urgentes, nossa equipe está disponível 24/7.",
+      "button": "Contacto de Emergência"
+    }
+  },
+  "office": {
+    "title": "Nossa Localização",
+    "description": "Visite nosso escritório em Luanda para uma reunião presencial",
+    "addressTitle": "Endereço",
+    "addressLabel": "Endereço Principal",
+    "addressLabel2": "Escritório de Operações",
+    "address": "Av.21 de Janeiro, Complexo Horizonte Morro Bento, Bloco A, 2º Andar, Morro Bento, Samba - Luanda",
+    "address2": "Operações Sonils",
+    "hoursLabel": "Horário de Funcionamento",
+    "hours": "Segunda a Sexta: 08:00 - 17:00",
+    "sunday": "Sábado/Domingo: Emergências apenas",
+    "placeFree": "Centro de operações: Sonils",
+    "directionsLabel": "Como Chegar",
+    "directions": "Localização estratégica com fácil acesso aos principais portos e terminais marítimos de Luanda.",
+    "mapPlaceholder": "Mapa interativo será integrado aqui",
+    "main": "Escritório Principal",
+    "operations": "Escritório de Operações",
+    "viewMapButton": "Ver Mapa Completo",
+     "mapDescription": "Selecione qual escritório visualizar no mapa completo"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "description": "Respostas para as dúvidas mais comuns",
+    "items": [
+      {
+        "question": "Qual o tempo de resposta para orçamentos?",
+        "answer": "Respondemos a todas as solicitações de orçamento em até 24 horas durante dias úteis."
+      },
+      {
+        "question": "Vocês operam 24 horas por dia?",
+        "answer": "Sim, oferecemos suporte 24/7 para emergências marítimas e operações críticas."
+      },
+      {
+        "question": "Quais documentos são necessários para os serviços?",
+        "answer": "Os documentos variam por serviço. Nossa equipe fornecerá uma lista detalhada após a consulta inicial."
+      },
+      {
+        "question": "Vocês atendem navios de todas as bandeiras?",
+        "answer": "Sim, temos experiência com navios de diversas bandeiras e conhecimento das regulamentações internacionais."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Pronto para Começar?",
+    "description": "Nossa equipe está pronta para atender suas necessidades marítimas. Entre em contacto hoje mesmo e descubra como podemos ajudar.",
+    "requestQuote": "Solicitar Orçamento",
+    "scheduleMeeting": "Agendar Reunião"
+  }
+}
+
+
