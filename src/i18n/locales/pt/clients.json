@@ -43,6 +43,7 @@
       "relation": "Parceiro"
     }
   ],
+  "servicesProvided": "Serviços Prestados",
   "mainClientsNew": [
     {
       "name": "Sonangol",
@@ -146,6 +147,7 @@
       "company": "SONILS"
     }
   ],
+  "benefitsTitle": "Por Que Nos Escolhem?",
   "benefits": [
     {
       "key": "handshake",

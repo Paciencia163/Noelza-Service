@@ -8,11 +8,12 @@
   "statsSubtitle": "Números que refletem nossa excelência operacional",
 
   "stats2024": [
-    { "number": "216", "label": "Navios Atendidos", "icon": "Ship", "color": "text-primary" },
-    { "number": "1,269", "label": "Navios em Clearency", "icon": "FileCheck", "color": "text-accent" },
+    { "number": "216", "label": "Navios Sob Agenciamento", "icon": "Ship", "color": "text-primary" },
+    { "number": "1,269", "label": "Navios em Escala", "icon": "FileCheck", "color": "text-accent" },
     { "number": "20,979", "label": "Tripulantes Assistidos", "icon": "Users", "color": "text-maritime-teal" },
     { "number": "100%", "label": "Taxa de Satisfação", "icon": "TrendingUp", "color": "text-maritime-gold" }
   ],
+
   "services": {
     "title": "Tipos de Serviços Prestados",
     "description": "Distribuição dos nossos serviços ao longo de 2024, demonstrando nossa versatilidade e capacidade de atendimento.",
@@ -22,20 +23,19 @@
     "cardStats": {
       "types": "Tipos de Serviços",
       "availability": "Atendimento"
-    }
+    },
+    "numberTypes": "4"
   },
   "serviceTypes": [
-    { "service": "Partida/Chegada da Tripulação", "count": "20,974" },
-    { "service": "Taxa Mensal da Agência", "count": "216" },
-    { "service": "Taxa de Parto", "count": "193" },
-    { "service": "Liberação do Porto", "count": "1,384" },
+    { "service": "Assistência a tripulantes offshore e onshore", "count": "20,974" },
+    { "service": "Navios sob agenciamento", "count": "216" },
+    { "service": "Navios em Escala", "count": "1,384" },
     { "service": "Outros Serviços", "count": "44" }
   ],
-  
-  "performance": {
+ "performance": {
     "title": "Performance Mensal 2024",
     "subtitle": "Evolução consistente ao longo do ano",
-    "shipsTitle": "Navios Atendidos por Mês",
+    "shipsTitle": "Navios Sob Agenciamento por Mês",
     "crewTitle": "Tripulantes Assistidos por Mês",
      "monthlyData": [
       { "month": "Jan", "ships": 98, "crew": 1654 },

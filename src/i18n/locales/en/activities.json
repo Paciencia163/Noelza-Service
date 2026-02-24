@@ -28,8 +28,8 @@
     "numberTypes": "4"
   },
   "serviceTypes": [
-    { "service": "Assistance to offshore and onshore crew members", "count": "20,974" },
-    { "service": "Vessels Under Agency", "count": "216" },
+    { "service": "Assistance for offshore and onshore crew", "count": "20,974" },
+    { "service": "Vessels Under Agency", "count": "317" },
     { "service": "Vessels Port Calls", "count": "193" },
     { "service": "Other Services", "count": "44" }
   ],

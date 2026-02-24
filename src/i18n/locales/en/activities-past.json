@@ -9,8 +9,8 @@
   "statsSubtitle": "Numbers reflecting our operational excellence",
 
   "stats2024": [
-    { "number": "216", "label": "Ships Served", "icon": "Ship", "color": "text-primary" },
-    { "number": "1,269", "label": "Ships in Clearance", "icon": "FileCheck", "color": "text-accent" },
+    { "number": "216", "label": "Vessels Under Agency", "icon": "Ship", "color": "text-primary" },
+    { "number": "1,269", "label": "Vessels Port Calls", "icon": "FileCheck", "color": "text-accent" },
     { "number": "20,979", "label": "Crew Assisted", "icon": "Users", "color": "text-maritime-teal" },
     { "number": "100%", "label": "Satisfaction Rate", "icon": "TrendingUp", "color": "text-maritime-gold" }
   ],
@@ -27,10 +27,9 @@
     "numberTypes": "4"
   },
   "serviceTypes": [
-    { "service": "Crew Departure/Arrival", "count": "20,974" },
-    { "service": "Monthly Agency Fee", "count": "216" },
-    { "service": "Birthing Fee", "count": "193" },
-    { "service": "Port Clearance", "count": "1,384" },
+    { "service": "Assistance for offshore and onshore crew", "count": "20,974" },
+    { "service": "Vessels Under Agency", "count": "216" },
+    { "service": "Vessels Port Calls", "count": "1,384" },
     { "service": "Other Services", "count": "44" }
   ],
   "performance": {

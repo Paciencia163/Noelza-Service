@@ -45,6 +45,7 @@
       "relation": "Partner"
     }
   ],
+  "servicesProvided": "Services Provided",
   "mainClientsNew": [
     {
       "name": "Sonangol",
@@ -148,6 +149,7 @@
       "company": "SONILS"
     }
   ],
+  "benefitsTitle": "Why do They Choose Us?",
   "benefits": [
     {
       "key": "handshake",
@@ -165,7 +167,7 @@
       "description": "Deep expertise in the Angolan market and local regulations"
     },
     {
-      "key": "Users",
+      "key": "users",
       "title": "Specialized Team",
       "description": "Highly skilled professionals dedicated to your success"
     }

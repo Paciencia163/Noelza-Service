@@ -154,7 +154,7 @@ const ActivitiesPast = () => {
               </p>
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="p-4 bg-primary/10 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">5</div>
+                  <div className="text-2xl font-bold text-primary">{t("activitiespast.services.numberTypes")}</div>
                   <p className="text-sm text-muted-foreground">
                     {t("activitiespast.services.cardStats.types")}
                   </p>
@@ -163,7 +163,7 @@ const ActivitiesPast = () => {
                   <div className="text-2xl font-bold text-accent">24/7</div>
                   <p className="text-sm text-muted-foreground">
                     {t("activitiespast.services.cardStats.availability")}
-                  </p>
+                  </p> 
                 </div>
               </div>
             </CardContent>

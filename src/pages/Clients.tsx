@@ -97,7 +97,7 @@ return ( <div className="min-h-screen">
                 <div className="md:col-span-2">  
                   <p className="text-lg text-muted-foreground mb-6 leading-relaxed">{client.description}</p>  
                   <div>  
-                    <h4 className="font-semibold text-primary mb-3">{t("servicesProvided", "Serviços Prestados:")}</h4>  
+                    <h4 className="font-semibold text-primary mb-3">{t("clients.servicesProvided")}:</h4>  
                     <div className="flex flex-wrap gap-2">  
                       {client.services.map((service, idx) => (  
                         <span key={idx} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">{service}</span>  
@@ -199,7 +199,7 @@ return ( <div className="min-h-screen">
     <div className="container mx-auto">  
       <div className="grid lg:grid-cols-2 gap-12 items-center">  
         <div>  
-          <h2 className="text-3xl font-bold text-primary mb-6">{t("benefitsTitle", "Por Que Nos Escolhem?")}</h2>  
+          <h2 className="text-3xl font-bold text-primary mb-6">{t("clients.benefitsTitle")}</h2>  
           <div className="space-y-6">  
             {benefits.map((benefit, index) => {  
               // const IconComponent = benefit.icon;  

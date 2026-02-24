@@ -108,8 +108,8 @@
 "subtitle": "Principles guiding our multidisciplinary team",
 "items": [
 {
-"key": "GraduationCap",
-"title": "Continuous Training",
+"key": "graduationCap",
+"title": "Continuous Improvement",
 "description": "We constantly invest in the training of our team"
 },
 {
@@ -130,7 +130,7 @@
 "benefits": [
 "Collaborative work environment",
 "Growth opportunities",
-"Continuous training",
+"Continuous Improvement",
 "Challenging projects"
 ],
 "workWithUs": {
