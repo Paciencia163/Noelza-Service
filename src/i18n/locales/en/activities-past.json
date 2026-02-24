@@ -9,8 +9,8 @@
   "statsSubtitle": "Numbers reflecting our operational excellence",
 
   "stats2024": [
-    { "number": "+216", "label": "Ships Served", "icon": "Ship", "color": "text-primary" },
-    { "number": "+1,269", "label": "Ships in Clearance", "icon": "FileCheck", "color": "text-accent" },
+    { "number": "216", "label": "Ships Served", "icon": "Ship", "color": "text-primary" },
+    { "number": "1,269", "label": "Ships in Clearance", "icon": "FileCheck", "color": "text-accent" },
     { "number": "20,979", "label": "Crew Assisted", "icon": "Users", "color": "text-maritime-teal" },
     { "number": "100%", "label": "Satisfaction Rate", "icon": "TrendingUp", "color": "text-maritime-gold" }
   ],
@@ -23,7 +23,8 @@
     "cardStats": {
       "types": "Service Types",
       "availability": "Availability"
-    }
+    },
+    "numberTypes": "4"
   },
   "serviceTypes": [
     { "service": "Crew Departure/Arrival", "count": "20,974" },

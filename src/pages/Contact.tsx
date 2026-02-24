@@ -409,21 +409,27 @@ const handleSubmit = async (e: React.FormEvent) => {
                   <h3 className="text-xl font-bold text-primary mb-4">{t("contact.office.addressTitle")}</h3>
                   <div className="space-y-4">
                     <div>
-                      <p className="font-semibold text-primary">{t("contact.office.addressLabel")}:</p>
+                      <p className="font-semibold text-primary">{t("contact.office.addressLabel")}</p>
                       <p className="text-muted-foreground">{t("contact.office.address")}</p>
                     </div>
+                    {/* Horario de funcionamento do primeiro escritório */}
+                      <div>
+                      <p className="font-semibold text-primary">{t("contact.office.hoursLabel")}</p>
+                      <p className="text-muted-foreground">{t("contact.office.hours")}</p>
+                      <p className="text-muted-foreground">{t("contact.office.sunday")}</p>
+                    </div>
                     <div>
-                      <p className="font-semibold text-primary">{t("contact.office.addressLabel2")}:</p>
+                      <p className="font-semibold text-primary">{t("contact.office.addressLabel2")}</p>
                       <p className="text-muted-foreground">{t("contact.office.address2")}</p>
                     </div>
                     <div>
-                      <p className="font-semibold text-primary">{t("contact.office.hoursLabel")}:</p>
-                      <p className="text-muted-foreground">{t("contact.office.hours")}</p>
-                      <p className="text-muted-foreground">{t("contact.office.sunday")}</p>
+                      <p className="font-semibold text-primary">{t("contact.office.hoursLabel")}</p>
+                      <p className="text-muted-foreground">{t("contact.office.timeTableSonils")}</p>
+                      {/* <p className="text-muted-foreground">{t("contact.office.sunday")}</p> */}
             
                     </div>
                     <div>
-                      <p className="font-semibold text-primary">{t("contact.office.directionsLabel")}:</p>
+                      <p className="font-semibold text-primary">{t("contact.office.directionsLabel")}</p>
                       <p className="text-muted-foreground">{t("contact.office.directions")}</p>
                     </div>
                   </div>

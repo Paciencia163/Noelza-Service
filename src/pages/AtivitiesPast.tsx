@@ -315,7 +315,7 @@ function AnimatedStatCard({
         <Icon className={`w-16 h-16 mx-auto mb-4 ${color} group-hover:scale-110 transition-transform duration-300`} />
          <div className={`text-4xl font-bold mb-2 ${color} ${highlight ? 'animate-pulse-glow' : ''}`}>
         {/* <div className={`text-4xl font-bold mb-2 ${color}`}> */}
-          {displayCount.toLocaleString()}+
+          {displayCount.toLocaleString()}
         </div>
         <p className="text-muted-foreground font-medium">{label}</p>
       </CardContent>

@@ -27,7 +27,7 @@
     "numberTypes": "4"
   },
   "serviceTypes": [
-    { "service": "Assistência atripulantes offshore e onshore", "count": "20,974" },
+    { "service": "Assistência a tripulantes offshore e onshore", "count": "20,974" },
     { "service": "Navios sobre agenciamento", "count": "216" },
     { "service": "Navios em Escala", "count": "1,384" },
     { "service": "Outros Serviços", "count": "44" }

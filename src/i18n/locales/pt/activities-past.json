@@ -8,8 +8,8 @@
   "statsSubtitle": "Números que refletem nossa excelência operacional",
 
   "stats2024": [
-    { "number": "+216", "label": "Navios Atendidos", "icon": "Ship", "color": "text-primary" },
-    { "number": "+1,269", "label": "Navios em Clearency", "icon": "FileCheck", "color": "text-accent" },
+    { "number": "216", "label": "Navios Atendidos", "icon": "Ship", "color": "text-primary" },
+    { "number": "1,269", "label": "Navios em Clearency", "icon": "FileCheck", "color": "text-accent" },
     { "number": "20,979", "label": "Tripulantes Assistidos", "icon": "Users", "color": "text-maritime-teal" },
     { "number": "100%", "label": "Taxa de Satisfação", "icon": "TrendingUp", "color": "text-maritime-gold" }
   ],
