@@ -96,10 +96,10 @@ return ( <div className="min-h-screen">
     <div className="container mx-auto">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-primary mb-4">
-          {t("about.timelineTitle", "Nossa Trajetória")}
+          {t("about.timelineTitle")}
         </h2>
         <p className="text-lg text-muted-foreground">
-          {t("about.timelineSubtitle", "Momentos importantes na história da Noelza Service")}
+          {t("about.timelineSubtitle")}
         </p>
       </div>
       <div className="max-w-4xl mx-auto">
@@ -143,10 +143,10 @@ return ( <div className="min-h-screen">
     <div className="container mx-auto">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-primary mb-4">
-          {t("about.valuesTitle", "Nossos Valores")}
+          {t("about.valuesTitle")}
         </h2>
         <p className="text-lg text-muted-foreground">
-          {t("about.valuesSubtitle", "Os princípios que guiam nossas ações e decisões")}
+          {t("about.valuesSubtitle")}
         </p>
       </div>
       <div className="grid md:grid-cols-3 gap-8">

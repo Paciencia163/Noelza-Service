@@ -8,6 +8,8 @@
     "paragraph1": "Fundada em 14 de fevereiro de 2018, a Noelza Service nasceu com o objetivo de oferecer soluções profissionais e eficientes para o setor marítimo angolano. Nossa jornada foi marcada por momentos de crescimento, reorganização e consolidação no mercado.",
     "paragraph2": "Após um período de reorganização estratégica, retomamos nossas atividades com uma estrutura renovada e parcerias sólidas, estabelecendo-nos como referência em agenciamento de navegação marítima e freight forward."
   },
+  "timelineTitle": "Nossa Trajetória",
+  "timelineSubtitle": "Momentos importantes na história da Noelza Service",
   "timeline": [
     {
       "date": "14/02/2018",
@@ -49,6 +51,8 @@
       "description": "Soluções seguras e eficientes para nossos clientes"
     }
   ],
+  "valuesTitle": "Nossos Valores",
+  "valuesSubtitle": "Os princípios que guiam nossas ações e decisões",
   "team": {
     "title": "Equipe Multidisciplinar",
     "description": "Nossa equipe é formada por profissionais dedicados e eficientes, com ampla experiência no setor marítimo e comprometidos com a excelência no atendimento.",

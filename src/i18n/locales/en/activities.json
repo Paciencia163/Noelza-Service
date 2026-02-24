@@ -9,8 +9,8 @@
   "statsSubtitle": "Numbers reflecting our operational excellence",
 
   "stats2025": [
-    { "number": "+317", "label": "Ships Served", "icon": "Ship", "color": "text-primary" },
-    { "number": "+2.244", "label": "Ships in Clearance", "icon": "FileCheck", "color": "text-accent" },
+    { "number": "317", "label": "Vessels Under Agency", "icon": "Ship", "color": "text-primary" },
+    { "number": "2.244", "label": "Vessels Port Calls", "icon": "FileCheck", "color": "text-accent" },
     { "number": "35.249", "label": "Crew Assisted", "icon": "Users", "color": "text-maritime-teal" },
     { "number": "100%", "label": "Satisfaction Rate", "icon": "TrendingUp", "color": "text-maritime-gold" }
   ],
@@ -28,10 +28,9 @@
     "numberTypes": "4"
   },
   "serviceTypes": [
-    { "service": "Crew Departure/Arrival", "count": "20,974" },
-    { "service": "Monthly Agency Fee", "count": "216" },
-    { "service": "Birthing Fee", "count": "193" },
-    { "service": "Port Clearance", "count": "1,384" },
+    { "service": "Assistance to offshore and onshore crew members", "count": "20,974" },
+    { "service": "Vessels Under Agency", "count": "216" },
+    { "service": "Vessels Port Calls", "count": "193" },
     { "service": "Other Services", "count": "44" }
   ],
   "performance": {
@@ -63,7 +62,7 @@
   ],
   "cta": {
     "title": "Join Our Results",
-    "subtitle": "Join over 1,200 ships that trusted our services in 2025. Be the next to experience our excellence.",
+    "subtitle": "Join over 2000 ships that trusted our services in 2025. Be the next to experience our excellence.",
     "button": "Request Our Services"
   }
 }

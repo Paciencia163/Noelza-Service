@@ -8,6 +8,8 @@
     "paragraph1": "Founded on February 14, 2018, Noelza Service was created to provide professional and efficient solutions for the Angolan maritime sector. Our journey has been marked by growth, reorganization, and market consolidation.",
     "paragraph2": "After a period of strategic reorganization, we resumed operations with a renewed structure and strong partnerships, establishing ourselves as a reference in ship agency and freight forward."
   },
+  "timelineTitle": "Our Journey",
+  "timelineSubtitle": "Key moments in the history of Noelza Service",
   "timeline": [
     {
       "date": "14/02/2018",
@@ -21,7 +23,7 @@
     },
     {
       "date": "2023",
-      "title": "Reactivation",
+      "title": "Resume",
       "description": "Resumption of activities with new structure"
     },
     {
@@ -49,6 +51,8 @@
       "description": "Safe and efficient solutions for our clients"
     }
   ],
+  "valuesTitle": "Our Values",
+  "valuesSubtitle": "The principles that guide our actions and decisions.",
   "team": {
     "title": "Multidisciplinary Team",
     "description": "Our team is composed of dedicated and efficient professionals with extensive experience in the maritime sector and committed to excellence in service.",
