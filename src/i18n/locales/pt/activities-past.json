@@ -35,8 +35,8 @@
  "performance": {
     "title": "Performance Mensal 2024",
     "subtitle": "Evolução consistente ao longo do ano",
-    "shipsTitle": "Navios Sob Agenciamento por Mês",
-    "crewTitle": "Tripulantes Assistidos por Mês",
+    "shipsTitle": "Navios Sob Agenciamento",
+    "crewTitle": "Tripulantes Assistidos",
      "monthlyData": [
       { "month": "Jan", "ships": 98, "crew": 1654 },
       { "month": "Fev", "ships": 105, "crew": 1789 },

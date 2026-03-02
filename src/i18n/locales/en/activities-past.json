@@ -35,8 +35,8 @@
   "performance": {
     "title": "Monthly Performance 2024",
     "subtitle": "Consistent progress throughout the year",
-    "shipsTitle": "Ships Served per Month",
-    "crewTitle": "Crew Assisted per Month",
+    "shipsTitle": "Ships Served",
+    "crewTitle": "Crew Assisted",
      "monthlyData": [
       { "month": "Jan", "ships": 98, "crew": 1654 },
       { "month": "Feb", "ships": 105, "crew": 1789 },
