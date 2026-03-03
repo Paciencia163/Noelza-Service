@@ -27,31 +27,33 @@
     "numberTypes": "4"
   },
   "serviceTypes": [
-    { "service": "Assistance for offshore and onshore crew", "count": "20,974" },
+    { "service": "Assistance for offshore and onshore crew", "count": "20.979" },
     { "service": "Vessels Under Agency", "count": "216" },
-    { "service": "Vessels Port Calls", "count": "1,384" },
+    { "service": "Vessels Port Calls", "count": "1.269" },
     { "service": "Other Services", "count": "44" }
   ],
   "performance": {
     "title": "Monthly Performance 2024",
     "subtitle": "Consistent progress throughout the year",
     "shipsTitle": "Ships Served",
+    "clearencyTitle": "Ships in Scale",
     "crewTitle": "Crew Assisted",
      "monthlyData": [
-      { "month": "Jan", "ships": 98, "crew": 1654 },
-      { "month": "Feb", "ships": 105, "crew": 1789 },
-      { "month": "Mar", "ships": 112, "crew": 1923 },
-      { "month": "Apr", "ships": 108, "crew": 1845 },
-      { "month": "May", "ships": 115, "crew": 1967 },
-      { "month": "Jun", "ships": 109, "crew": 1876 },
-      { "month": "Jul", "ships": 118, "crew": 2034 },
-      { "month": "Aug", "ships": 106, "crew": 1798 },
-      { "month": "Sep", "ships": 113, "crew": 1934 },
-      { "month": "Oct", "ships": 102, "crew": 1745 },
-      { "month": "Nov", "ships": 97, "crew": 1632 },
-      { "month": "Dec", "ships": 86, "crew": 1477 }
+      { "month": "Jan", "ships": 98,  "clearency": 72,  "crew": 1654 },
+      { "month": "Feb", "ships": 105, "clearency": 108, "crew": 1789 },
+      { "month": "Mar", "ships": 112, "clearency": 101, "crew": 1923 },
+      { "month": "Apr", "ships": 108, "clearency": 50,  "crew": 1845 },
+      { "month": "May", "ships": 115, "clearency": 77,  "crew": 1967 },
+      { "month": "Jun", "ships": 109, "clearency": 96,  "crew": 1876 },
+      { "month": "Jul", "ships": 118, "clearency": 147, "crew": 2034 },
+      { "month": "Aug", "ships": 106, "clearency": 147, "crew": 1798 },
+      { "month": "Sep", "ships": 113, "clearency": 136, "crew": 1934 },
+      { "month": "Oct", "ships": 102, "clearency": 103, "crew": 1745 },
+      { "month": "Nov", "ships": 97,  "clearency": 92,  "crew": 1632 },
+      { "month": "Dec", "ships": 86,  "clearency": 140, "crew": 1477 }
     ]
   },
+
   "highlightsTitle": "Experience Highlights",
   "highlightsSubtitle": "Key milestones demonstrating our competence",
   "highlights": [

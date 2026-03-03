@@ -27,9 +27,9 @@
     "numberTypes": "4"
   },
   "serviceTypes": [
-    { "service": "Assistência a tripulantes offshore e onshore", "count": "20,974" },
-    { "service": "Navios sob agenciamento", "count": "216" },
-    { "service": "Navios em Escala", "count": "1,384" },
+    { "service": "Assistência a tripulantes offshore e onshore", "count": "35.249" },
+    { "service": "Navios sob agenciamento", "count": "317" },
+    { "service": "Navios em Escala", "count": "2.244" },
     { "service": "Outros Serviços", "count": "44" }
   ],
   
@@ -37,20 +37,21 @@
     "title": "Performance Mensal 2025",
     "subtitle": "Evolução consistente ao longo do ano",
     "shipsTitle": "Navios Sob Agenciamento",
+    "clearencyTitle": "Navios em Escala",
     "crewTitle": "Tripulantes Assistidos",
      "monthlyData": [
-      { "month": "Jan", "ships": 23, "crew": 3113 },
-      { "month": "Fev", "ships": 24, "crew": 3301 },
-      { "month": "Mar", "ships": 23, "crew": 2820 },
-      { "month": "Abr", "ships": 28, "crew": 2820 },
-      { "month": "Mai", "ships": 20, "crew": 2863 },
-      { "month": "Jun", "ships": 26, "crew": 3048 },
-      { "month": "Jul", "ships": 28, "crew": 3036 },
-      { "month": "Ago", "ships": 27, "crew": 2793 },
-      { "month": "Set", "ships": 33, "crew": 3537 },
-      { "month": "Out", "ships": 30, "crew": 3197 },
-      { "month": "Nov", "ships": 27, "crew": 3648 },
-      { "month": "Dez", "ships": 28, "crew": 3893 }
+      { "month": "Jan", "ships": 23, "clearency": 170, "crew": 3113 },
+      { "month": "Fev", "ships": 24, "clearency": 152, "crew": 3301 },
+      { "month": "Mar", "ships": 23, "clearency": 172, "crew": 2820 },
+      { "month": "Abr", "ships": 28, "clearency": 196, "crew": 2820 },
+      { "month": "Mai", "ships": 20, "clearency": 184, "crew": 2863 },
+      { "month": "Jun", "ships": 26, "clearency": 184, "crew": 3048 },
+      { "month": "Jul", "ships": 28, "clearency": 178, "crew": 3036 },
+      { "month": "Ago", "ships": 27, "clearency": 178, "crew": 2793 },
+      { "month": "Set", "ships": 33, "clearency": 212, "crew": 3537 },
+      { "month": "Out", "ships": 30, "clearency": 216, "crew": 3197 },
+      { "month": "Nov", "ships": 27, "clearency": 208, "crew": 3648 },
+      { "month": "Dez", "ships": 28, "clearency": 194, "crew": 3893 }
     ]
   },
   "highlightsTitle": "Destaques da Nossa Experiência",

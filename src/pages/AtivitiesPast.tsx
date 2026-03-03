@@ -39,6 +39,7 @@ interface ServiceType {
 interface MonthlyData {
   month: string;
   ships: number;
+  clearency: number;
   crew: number;
 }
 
@@ -182,7 +183,7 @@ const ActivitiesPast = () => {
           </p>
         </div>
         <div className="container mx-auto grid lg:grid-cols-2 gap-12">
-          {["ships", "crew"].map((type, index) => (
+          {["ships", "clearency", "crew"].map((type, index) => (
             <Card key={index} className="card-maritime">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-primary mb-6 text-center">
@@ -200,8 +201,8 @@ const ActivitiesPast = () => {
                             }`}
                             style={{
                               width: `${
-                                (data[type as "ships" | "crew"] /
-                                  (type === "ships" ? 118 : 2034)) *
+                                (data[type as "ships" | "clearency" | "crew"] /
+                                  (type === "ships" ? 118 : type === "clearency" ? 147 : 2034)) *
                                 100
                               }%`,
                             }}
@@ -209,7 +210,7 @@ const ActivitiesPast = () => {
                         </div>
                       </div>
                       <span className="text-sm text-muted-foreground">
-                        {data[type as "ships" | "crew"]}
+                        {data[type as "ships" | "clearency" | "crew"]}
                       </span>
                     </div>
                   ))}

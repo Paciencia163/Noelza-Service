@@ -29,11 +29,12 @@ const Header = () => {
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-2">
-        <div className="flex justify-between items-center h-14">
+        <div className="flex justify-between items-center h-18">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="h-10 w-16 md:w-18 md:h-20 rounded-lg flex items-center justify-center">
-              <img src="./Noelza.png" alt="Noelza Service" />
+            <div className="h-20 w-24 md:w-32 md:h-24 rounded-lg flex items-center justify-center">
+              {/* <img src="./Noelza.png" alt="Noelza Service" /> */}
+              <img src="./Noelza.png" className="h-[98px] md:h-[130px] w-auto object-contain" alt="Noelza Service" />
             </div>
           </Link>
 
@@ -43,7 +44,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                className={`px-3 py-2 text-md font-medium transition-colors duration-200 ${
                   isActive(item.href)
                     ? "text-primary border-b-2 border-primary"
                     : "text-foreground hover:text-primary"
@@ -97,7 +98,7 @@ const Header = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="p-2"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? <X className="w-12 h-12" /> : <Menu className="w-12 h-12" />}
             </Button>
           </div>
         </div>

@@ -40,6 +40,7 @@ interface MonthlyData {
   month: string;
   ships: number;
   crew: number;
+  clearency: number;
 }
 
 interface Highlight {
@@ -195,7 +196,7 @@ const Activities = () => {
           </p>
         </div>
         <div className="container mx-auto grid lg:grid-cols-2 gap-12">
-          {["ships", "crew"].map((type, index) => (
+          {["ships", "clearency", "crew"].map((type, index) => (
             <Card key={index} className="card-maritime">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-primary mb-6 text-center">
@@ -213,8 +214,8 @@ const Activities = () => {
                             }`}
                             style={{
                               width: `${
-                                (data[type as "ships" | "crew"] /
-                                  (type === "ships" ? 118 : 3893)) *
+                                (data[type as "ships" | "clearency" | "crew"] /
+                                  (type === "ships" ? 33 : type === "clearency" ? 216 : 3893)) *
                                 100
                               }%`,
                             }}
@@ -222,7 +223,7 @@ const Activities = () => {
                         </div>
                       </div>
                       <span className="text-sm text-muted-foreground">
-                        {data[type as "ships" | "crew"]}
+                        {data[type as "ships" | "clearency"| "crew"]}
                       </span>
                     </div>
                   ))}
