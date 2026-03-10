@@ -37,7 +37,7 @@
     "title": "Monthly Performance 2025",
     "subtitle": "Consistent progress throughout the year",
     "shipsTitle": "Ships Served",
-    "clearencyTitle": "Ships in Scale",
+    "clearencyTitle": "Vessels Port Calls",
     "crewTitle": "Crew Assisted",
      "monthlyData": [
       { "month": "Jan", "ships": 23, "clearency": 170, "crew": 3113 },
